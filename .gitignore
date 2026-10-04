@@ -32,3 +32,21 @@ Thumbs.db
 # Local project artifacts
 outputs/
 models/
+
+# Raw/processed geospatial data
+data/raw/
+data/interim/
+data/processed/
+
+# Raster data
+*.tif
+*.tiff
+
+# Model weights
+*.pt
+*.pth
+*.ckpt
+
+# QGIS temporary files
+*.qgz~
+*.aux.xml
