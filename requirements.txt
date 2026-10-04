@@ -1,0 +1,15 @@
+# Core Python dependencies for the Lagos flood risk project
+
+pandas
+numpy
+geopandas
+rasterio
+shapely
+fiona
+matplotlib
+seaborn
+scikit-learn
+jupyter
+earthengine-api
+requests
+pyproj
