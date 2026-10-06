@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "positive_pixels_checked": 26715236,
+  "checks": [
+    "All eight input/output rasters share CRS, transform and shape",
+    "Every output block checked against independent 10*log10(after/before) calculation, absolute tolerance 0.00001 dB",
+    "Positive mask exactly matches four finite positive inputs on common support",
+    "Excluded dB/change pixels equal -9999",
+    "Coverage categories match common-data mask"
+  ],
+  "unit_tests": "6 passed before processing"
+}

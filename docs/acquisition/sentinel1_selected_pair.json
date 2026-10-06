@@ -1,0 +1,17 @@
+{
+  "before": "S1A_IW_GRDH_1SDV_20240621T053018_20240621T053047_054417_069F0A_10B1",
+  "after": "S1A_IW_GRDH_1SDV_20240703T053017_20240703T053046_054592_06A521_9E4B",
+  "before_utc": "2024-06-21T05:30:18Z",
+  "after_utc": "2024-07-03T05:30:17Z",
+  "relative_orbit": 95,
+  "pass_direction": "DESCENDING",
+  "frame_before": 571,
+  "frame_after": 571,
+  "common_aoi_fraction": 0.9145652047103324,
+  "baseline_days": 11.999988425925926,
+  "after_days_from_event_start": 0.2710300925925926,
+  "period": "during",
+  "total_download_bytes": 2974450206,
+  "selection_rule": "Coverage >=80% first, then earliest event observation, shortest baseline, largest coverage",
+  "status": "Candidate only; requires acquisition-time evidence and GRD valid-data coverage inspection"
+}

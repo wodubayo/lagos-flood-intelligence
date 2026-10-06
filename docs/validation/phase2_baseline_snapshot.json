@@ -1,0 +1,60 @@
+{
+  "created_utc": "2026-10-06T00:03:24.358766+00:00",
+  "status": "provisional_unvalidated_checkpoint",
+  "candidate_count": 400,
+  "candidate_area_km2": 3.1252,
+  "rule": {
+    "june_vh_gt_db": -21,
+    "july_vh_le_db": -21,
+    "change_vh_le_db": -3,
+    "common_positive_support": true,
+    "exclude_jrc_occurrence_ge_percent": 90,
+    "minimum_component_pixels": 25,
+    "connectivity": 8,
+    "slope_cutoff": null
+  },
+  "artifacts": [
+    {
+      "path": "data/processed/sentinel1/lagos_candidate_exploratory_raw.tif",
+      "bytes": 329062,
+      "sha256": "9c74f7c9a8ea4269b1da7c0f2409429ae976a1b61362e3afa24c37c209e48269"
+    },
+    {
+      "path": "data/processed/sentinel1/lagos_candidate_exploratory_clean.tif",
+      "bytes": 284056,
+      "sha256": "d1f68da0b61074dc8b4b8dadb2305d55df06083473ff0d8bc948a32be3ad511e"
+    },
+    {
+      "path": "data/processed/sentinel1/lagos_candidate_review_polygons.gpkg",
+      "bytes": 536576,
+      "sha256": "a98d0e81d6e21a1f42360c09215ff71325ee1f4c12ad36ff17041ee8c2f3e3b9"
+    },
+    {
+      "path": "data/processed/sentinel1/lagos_candidate_water_review.gpkg",
+      "bytes": 548864,
+      "sha256": "2c7fc111be2cb57fa16e2109d637bade5e18b218992516ec8a98471aa0f27f5b"
+    },
+    {
+      "path": "data/processed/sentinel1/lagos_pair_positive_mask.tif",
+      "bytes": 281639,
+      "sha256": "7ec4f4e4ed05b8b4d09ccaa41e4c333a57f80bdb4e8b919a46cbea47066bfb2c"
+    },
+    {
+      "path": "docs/acquisition/sentinel1_threshold_report.json",
+      "bytes": 5015,
+      "sha256": "90245074d8c34b2268522e96ead7ddd8457bb990979a17e36934418c0cd583fc"
+    },
+    {
+      "path": "docs/acquisition/sentinel1_slope_report.json",
+      "bytes": 2090,
+      "sha256": "7bfb90063ce0dfcd800b3f007503e5c9c11be97399da1ed768e45bbdde7edfaa"
+    },
+    {
+      "path": "docs/acquisition/sentinel1_water_sensitivity.json",
+      "bytes": 3857,
+      "sha256": "94f644d8b76f8915c6d8d76bb7711ebfa0ee7d7542a381e925fe888c637e2388"
+    }
+  ],
+  "checks": "All hashes matched manifest; polygon count and pixel area verified",
+  "limitation": "Checksum checkpoint only; not a backup, immutable lock or accuracy validation"
+}

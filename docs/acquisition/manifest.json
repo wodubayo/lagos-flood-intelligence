@@ -1,0 +1,919 @@
+{
+  "data/raw/boundaries/NGA_ADM0.geojson": {
+    "source": "https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/9469f09/releaseData/gbOpen/NGA/ADM0/geoBoundaries-NGA-ADM0.geojson",
+    "retrieved_utc": "2026-10-04T04:18:53.225318+00:00",
+    "bytes": 311600,
+    "sha256": "cb2407fde9f81c67a3637fbc13bd1c7bcfe20c469eba77148b3e4895ee33acaa",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "year": "2022",
+    "crs": "EPSG:4326"
+  },
+  "data/raw/boundaries/NGA_ADM1.geojson": {
+    "source": "https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/9469f09/releaseData/gbOpen/NGA/ADM1/geoBoundaries-NGA-ADM1.geojson",
+    "retrieved_utc": "2026-10-04T04:18:54.604148+00:00",
+    "bytes": 2289696,
+    "sha256": "64fa218ac3d453cc1e66412ff461c5dfa1a4a1ade0da93b239a9891b587d28f9",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "year": "2022",
+    "crs": "EPSG:4326"
+  },
+  "data/raw/boundaries/NGA_ADM2.geojson": {
+    "source": "https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/9469f09/releaseData/gbOpen/NGA/ADM2/geoBoundaries-NGA-ADM2.geojson",
+    "retrieved_utc": "2026-10-04T04:18:55.791557+00:00",
+    "bytes": 9422551,
+    "sha256": "bef7f2cfa45e012f4772eaa61c7b99e5188aeba4d5c6badae7e9f9aae8c02fcd",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "year": "2022",
+    "crs": "EPSG:4326"
+  },
+  "data/interim/boundaries/lagos_state.geojson": {
+    "source": "geoBoundaries NGA gbOpen, see pinned metadata",
+    "retrieved_utc": "2026-10-04T04:18:56.326859+00:00",
+    "bytes": 30751,
+    "sha256": "668ebe775ac597fa2951872c4aaaa808a49fa2702dab6f6d96bd08bb5547e8f3",
+    "crs": "EPSG:4326",
+    "processing": "State name selection; LGAs assigned by >50% overlap in EPSG:32631"
+  },
+  "data/interim/boundaries/lagos_lgas.geojson": {
+    "source": "geoBoundaries NGA gbOpen, see pinned metadata",
+    "retrieved_utc": "2026-10-04T04:18:56.383802+00:00",
+    "bytes": 226961,
+    "sha256": "63547df5e4f1395aa22c1547398beb8d28ea1331ff7e69cd92fb73c1d9d3f654",
+    "crs": "EPSG:4326",
+    "processing": "State name selection; LGAs assigned by >50% overlap in EPSG:32631"
+  },
+  "docs/acquisition/sentinel1_search.geojson": {
+    "source": "https://api.daac.asf.alaska.edu/services/search/param?platform=Sentinel-1A&processingLevel=GRD_HD&beamMode=IW&polarization=VV%2BVH&start=2024-06-15T00%3A00%3A00Z&end=2024-07-16T00%3A00%3A00Z&intersectsWith=POLYGON+%28%282.698830793306513+6.367825533321763%2C+4.3686295177381+6.367825533321763%2C+4.3686295177381+6.700437230793625%2C+2.698830793306513+6.700437230793625%2C+2.698830793306513+6.367825533321763%29%29&output=geojson&maxResults=1000",
+    "retrieved_utc": "2026-10-04T04:25:00.469358+00:00",
+    "bytes": 14281,
+    "sha256": "9669e6a842e940b2a15c52d5887c2ea7019336d41313b8510cbb1c3bedbc4118",
+    "processing": "ASF catalog search; exact AOI intersection filter"
+  },
+  "data/raw/dem/Copernicus_DSM_COG_10_N06_00_E002_00_DEM.tif": {
+    "source": "https://copernicus-dem-30m.s3.eu-central-1.amazonaws.com/Copernicus_DSM_COG_10_N06_00_E002_00_DEM/Copernicus_DSM_COG_10_N06_00_E002_00_DEM.tif",
+    "retrieved_utc": "2026-10-04T04:19:43.660026+00:00",
+    "bytes": 31423517,
+    "sha256": "5946998bb6c971598129e625d7ac929337ddc7a0c7f6622e071180be9c4ca171",
+    "license": "Copernicus DEM license; https://registry.opendata.aws/copernicus-dem/",
+    "epoch": "2011-2015 acquisitions, 2021 release",
+    "vertical_datum": "EGM2008",
+    "crs": "EPSG:4326",
+    "resolution": "1 arc-second"
+  },
+  "data/raw/dem/Copernicus_DSM_COG_10_N06_00_E003_00_DEM.tif": {
+    "source": "https://copernicus-dem-30m.s3.eu-central-1.amazonaws.com/Copernicus_DSM_COG_10_N06_00_E003_00_DEM/Copernicus_DSM_COG_10_N06_00_E003_00_DEM.tif",
+    "retrieved_utc": "2026-10-04T04:19:45.603416+00:00",
+    "bytes": 28321443,
+    "sha256": "de0cd1c9ef4bf7c22643bfa1f4f39c4aa5a4b37c068f076acd6697ea2306110d",
+    "license": "Copernicus DEM license; https://registry.opendata.aws/copernicus-dem/",
+    "epoch": "2011-2015 acquisitions, 2021 release",
+    "vertical_datum": "EGM2008",
+    "crs": "EPSG:4326",
+    "resolution": "1 arc-second"
+  },
+  "data/raw/dem/Copernicus_DSM_COG_10_N06_00_E004_00_DEM.tif": {
+    "source": "https://copernicus-dem-30m.s3.eu-central-1.amazonaws.com/Copernicus_DSM_COG_10_N06_00_E004_00_DEM/Copernicus_DSM_COG_10_N06_00_E004_00_DEM.tif",
+    "retrieved_utc": "2026-10-04T04:19:47.991983+00:00",
+    "bytes": 37784547,
+    "sha256": "02142852c8a4cc5b6b71ad39480022427b21cee136e5b3a830ef5b467d4a8dbc",
+    "license": "Copernicus DEM license; https://registry.opendata.aws/copernicus-dem/",
+    "epoch": "2011-2015 acquisitions, 2021 release",
+    "vertical_datum": "EGM2008",
+    "crs": "EPSG:4326",
+    "resolution": "1 arc-second"
+  },
+  "data/interim/dem/lagos_copernicus_dem30.tif": {
+    "source": [
+      "data/raw/dem/Copernicus_DSM_COG_10_N06_00_E002_00_DEM.tif",
+      "data/raw/dem/Copernicus_DSM_COG_10_N06_00_E003_00_DEM.tif",
+      "data/raw/dem/Copernicus_DSM_COG_10_N06_00_E004_00_DEM.tif"
+    ],
+    "retrieved_utc": "2026-10-04T04:19:49.824101+00:00",
+    "bytes": 19611012,
+    "sha256": "d956b48b0983f7a07d570b593fac5ee4dbf006fde608109b547b6693691bddab",
+    "crs": "EPSG:4326",
+    "vertical_datum": "EGM2008",
+    "processing": "Mosaic cropped to Lagos bounding box; native grid; DSM, not bare-earth DTM"
+  },
+  "data/interim/water/lagos_jrc_occurrence_1984_2021.tif": {
+    "source": "https://storage.googleapis.com/global-surface-water/downloads2021/occurrence/occurrence_0E_10Nv1_4_2021.tif",
+    "retrieved_utc": "2026-10-04T04:22:26.194276+00:00",
+    "bytes": 555931,
+    "sha256": "2b010e367c78e3d8b915b791c4ef9acb22ec71fbe00094741a504e6583b86207",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.00025,
+      0.00025
+    ],
+    "nodata": null,
+    "processing": "Native-grid AOI crop; no resampling",
+    "license": "Copernicus free use, attribution EC JRC/Google; Pekel et al. 2016",
+    "epoch": "1984-2021 occurrence; 2021 seasonality",
+    "caveat": "JRC reports occurrence/seasonality issues in v1.4; retain for sensitivity analysis, not an unquestioned mask"
+  },
+  "data/interim/water/lagos_jrc_seasonality_1984_2021.tif": {
+    "source": "https://storage.googleapis.com/global-surface-water/downloads2021/seasonality/seasonality_0E_10Nv1_4_2021.tif",
+    "retrieved_utc": "2026-10-04T04:22:27.529449+00:00",
+    "bytes": 163659,
+    "sha256": "f572836d7f06f492f8709cf1b3bdbd86915c82376a96af54b114f981c598e506",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.00025,
+      0.00025
+    ],
+    "nodata": null,
+    "processing": "Native-grid AOI crop; no resampling",
+    "license": "Copernicus free use, attribution EC JRC/Google; Pekel et al. 2016",
+    "epoch": "1984-2021 occurrence; 2021 seasonality",
+    "caveat": "JRC reports occurrence/seasonality issues in v1.4; retain for sensitivity analysis, not an unquestioned mask"
+  },
+  "data/interim/rainfall/chirps_20240621_lagos.tif": {
+    "source": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_daily/cogs/p05/2024/chirps-v2.0.2024.06.21.cog",
+    "retrieved_utc": "2026-10-04T04:22:30.737979+00:00",
+    "bytes": 1811,
+    "sha256": "53eef8b0626b27c85cd1be085980406debfa48227908d8f692b14b1daa4f107f",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.05000000074505806,
+      0.05000000074505806
+    ],
+    "nodata": null,
+    "processing": "Native-grid AOI crop; no resampling",
+    "license": "Public domain; https://chc.ucsb.edu/data/chirps",
+    "epoch": "2024-06-21",
+    "units": "mm/day",
+    "caveat": "0.05 degree grid; daily totals cannot establish flood timing at 06:30 WAT"
+  },
+  "data/interim/rainfall/chirps_20240622_lagos.tif": {
+    "source": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_daily/cogs/p05/2024/chirps-v2.0.2024.06.22.cog",
+    "retrieved_utc": "2026-10-04T04:22:31.533856+00:00",
+    "bytes": 1239,
+    "sha256": "0b689bd7030e32732d8156375e434d6d15cc9458784c96c06fc0c3051819dd85",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.05000000074505806,
+      0.05000000074505806
+    ],
+    "nodata": null,
+    "processing": "Native-grid AOI crop; no resampling",
+    "license": "Public domain; https://chc.ucsb.edu/data/chirps",
+    "epoch": "2024-06-22",
+    "units": "mm/day",
+    "caveat": "0.05 degree grid; daily totals cannot establish flood timing at 06:30 WAT"
+  },
+  "data/interim/rainfall/chirps_20240623_lagos.tif": {
+    "source": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_daily/cogs/p05/2024/chirps-v2.0.2024.06.23.cog",
+    "retrieved_utc": "2026-10-04T04:22:32.210089+00:00",
+    "bytes": 1519,
+    "sha256": "7b21fd096d8f90df22616d917e87c27ede5b45f5e45ff1a2d692f67aae328461",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.05000000074505806,
+      0.05000000074505806
+    ],
+    "nodata": null,
+    "processing": "Native-grid AOI crop; no resampling",
+    "license": "Public domain; https://chc.ucsb.edu/data/chirps",
+    "epoch": "2024-06-23",
+    "units": "mm/day",
+    "caveat": "0.05 degree grid; daily totals cannot establish flood timing at 06:30 WAT"
+  },
+  "data/interim/rainfall/chirps_20240624_lagos.tif": {
+    "source": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_daily/cogs/p05/2024/chirps-v2.0.2024.06.24.cog",
+    "retrieved_utc": "2026-10-04T04:22:32.561460+00:00",
+    "bytes": 1749,
+    "sha256": "6aadc311ef47d07968348626780f9124c4d90674003e234eae9aea94a80dbfac",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.05000000074505806,
+      0.05000000074505806
+    ],
+    "nodata": null,
+    "processing": "Native-grid AOI crop; no resampling",
+    "license": "Public domain; https://chc.ucsb.edu/data/chirps",
+    "epoch": "2024-06-24",
+    "units": "mm/day",
+    "caveat": "0.05 degree grid; daily totals cannot establish flood timing at 06:30 WAT"
+  },
+  "data/interim/rainfall/chirps_20240625_lagos.tif": {
+    "source": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_daily/cogs/p05/2024/chirps-v2.0.2024.06.25.cog",
+    "retrieved_utc": "2026-10-04T04:22:32.890190+00:00",
+    "bytes": 1643,
+    "sha256": "bcfde3169bdca23e960f78649d08cd90a8a73bab5a00ae80e41886afad263b62",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.05000000074505806,
+      0.05000000074505806
+    ],
+    "nodata": null,
+    "processing": "Native-grid AOI crop; no resampling",
+    "license": "Public domain; https://chc.ucsb.edu/data/chirps",
+    "epoch": "2024-06-25",
+    "units": "mm/day",
+    "caveat": "0.05 degree grid; daily totals cannot establish flood timing at 06:30 WAT"
+  },
+  "data/interim/rainfall/chirps_20240626_lagos.tif": {
+    "source": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_daily/cogs/p05/2024/chirps-v2.0.2024.06.26.cog",
+    "retrieved_utc": "2026-10-04T04:22:33.345810+00:00",
+    "bytes": 1801,
+    "sha256": "ff45635a0aa383429dbcb900c0c4b0873b3abd905b2c0ac6bf2f4f653d251d6f",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.05000000074505806,
+      0.05000000074505806
+    ],
+    "nodata": null,
+    "processing": "Native-grid AOI crop; no resampling",
+    "license": "Public domain; https://chc.ucsb.edu/data/chirps",
+    "epoch": "2024-06-26",
+    "units": "mm/day",
+    "caveat": "0.05 degree grid; daily totals cannot establish flood timing at 06:30 WAT"
+  },
+  "data/interim/rainfall/chirps_20240627_lagos.tif": {
+    "source": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_daily/cogs/p05/2024/chirps-v2.0.2024.06.27.cog",
+    "retrieved_utc": "2026-10-04T04:22:33.612679+00:00",
+    "bytes": 1227,
+    "sha256": "b7ef271dc8c8415f572927014ca76eae085f33e7741d5d4bccd8a49f7737b5ff",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.05000000074505806,
+      0.05000000074505806
+    ],
+    "nodata": null,
+    "processing": "Native-grid AOI crop; no resampling",
+    "license": "Public domain; https://chc.ucsb.edu/data/chirps",
+    "epoch": "2024-06-27",
+    "units": "mm/day",
+    "caveat": "0.05 degree grid; daily totals cannot establish flood timing at 06:30 WAT"
+  },
+  "data/interim/rainfall/chirps_20240628_lagos.tif": {
+    "source": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_daily/cogs/p05/2024/chirps-v2.0.2024.06.28.cog",
+    "retrieved_utc": "2026-10-04T04:22:34.019793+00:00",
+    "bytes": 1525,
+    "sha256": "b94eda312d44f2dede64890ff402f6ab231e6b9c8bd469fc6fb4416330bba989",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.05000000074505806,
+      0.05000000074505806
+    ],
+    "nodata": null,
+    "processing": "Native-grid AOI crop; no resampling",
+    "license": "Public domain; https://chc.ucsb.edu/data/chirps",
+    "epoch": "2024-06-28",
+    "units": "mm/day",
+    "caveat": "0.05 degree grid; daily totals cannot establish flood timing at 06:30 WAT"
+  },
+  "data/interim/rainfall/chirps_20240629_lagos.tif": {
+    "source": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_daily/cogs/p05/2024/chirps-v2.0.2024.06.29.cog",
+    "retrieved_utc": "2026-10-04T04:22:35.216986+00:00",
+    "bytes": 1795,
+    "sha256": "b5efa2d2b246f9ffaa6795e8fc559595097053e8105a3a4a79249107c7fe965a",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.05000000074505806,
+      0.05000000074505806
+    ],
+    "nodata": null,
+    "processing": "Native-grid AOI crop; no resampling",
+    "license": "Public domain; https://chc.ucsb.edu/data/chirps",
+    "epoch": "2024-06-29",
+    "units": "mm/day",
+    "caveat": "0.05 degree grid; daily totals cannot establish flood timing at 06:30 WAT"
+  },
+  "data/interim/rainfall/chirps_20240630_lagos.tif": {
+    "source": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_daily/cogs/p05/2024/chirps-v2.0.2024.06.30.cog",
+    "retrieved_utc": "2026-10-04T04:22:36.425027+00:00",
+    "bytes": 1269,
+    "sha256": "65bff2779160f49bd470a083ab135f02b9dd8028169a2a61f1655b177b19262e",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.05000000074505806,
+      0.05000000074505806
+    ],
+    "nodata": null,
+    "processing": "Native-grid AOI crop; no resampling",
+    "license": "Public domain; https://chc.ucsb.edu/data/chirps",
+    "epoch": "2024-06-30",
+    "units": "mm/day",
+    "caveat": "0.05 degree grid; daily totals cannot establish flood timing at 06:30 WAT"
+  },
+  "data/interim/rainfall/chirps_20240701_lagos.tif": {
+    "source": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_daily/cogs/p05/2024/chirps-v2.0.2024.07.01.cog",
+    "retrieved_utc": "2026-10-04T04:22:36.754849+00:00",
+    "bytes": 1705,
+    "sha256": "95d4f6b05bc1341b33d56d0641f6caf9f02a9ed66cf50c689a5b232d13e93b38",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.05000000074505806,
+      0.05000000074505806
+    ],
+    "nodata": null,
+    "processing": "Native-grid AOI crop; no resampling",
+    "license": "Public domain; https://chc.ucsb.edu/data/chirps",
+    "epoch": "2024-07-01",
+    "units": "mm/day",
+    "caveat": "0.05 degree grid; daily totals cannot establish flood timing at 06:30 WAT"
+  },
+  "data/interim/rainfall/chirps_20240702_lagos.tif": {
+    "source": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_daily/cogs/p05/2024/chirps-v2.0.2024.07.02.cog",
+    "retrieved_utc": "2026-10-04T04:22:37.134303+00:00",
+    "bytes": 1783,
+    "sha256": "1f9f7fd5f55eb028419f2931ae2f84ea000acd7104e304cc5b47ad3dea32c118",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.05000000074505806,
+      0.05000000074505806
+    ],
+    "nodata": null,
+    "processing": "Native-grid AOI crop; no resampling",
+    "license": "Public domain; https://chc.ucsb.edu/data/chirps",
+    "epoch": "2024-07-02",
+    "units": "mm/day",
+    "caveat": "0.05 degree grid; daily totals cannot establish flood timing at 06:30 WAT"
+  },
+  "data/interim/rainfall/chirps_20240703_lagos.tif": {
+    "source": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_daily/cogs/p05/2024/chirps-v2.0.2024.07.03.cog",
+    "retrieved_utc": "2026-10-04T04:22:37.477323+00:00",
+    "bytes": 1805,
+    "sha256": "2470942dd640e1bf2d37f48ed3b0a630055ed458c4d4d8a9072721c0c38aae15",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.05000000074505806,
+      0.05000000074505806
+    ],
+    "nodata": null,
+    "processing": "Native-grid AOI crop; no resampling",
+    "license": "Public domain; https://chc.ucsb.edu/data/chirps",
+    "epoch": "2024-07-03",
+    "units": "mm/day",
+    "caveat": "0.05 degree grid; daily totals cannot establish flood timing at 06:30 WAT"
+  },
+  "data/interim/rainfall/chirps_20240704_lagos.tif": {
+    "source": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_daily/cogs/p05/2024/chirps-v2.0.2024.07.04.cog",
+    "retrieved_utc": "2026-10-04T04:22:37.772263+00:00",
+    "bytes": 1227,
+    "sha256": "74cce54f69a3f5fe1e6745671f080bc09c5598b9fe9f320d2f41cf363a85a183",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.05000000074505806,
+      0.05000000074505806
+    ],
+    "nodata": null,
+    "processing": "Native-grid AOI crop; no resampling",
+    "license": "Public domain; https://chc.ucsb.edu/data/chirps",
+    "epoch": "2024-07-04",
+    "units": "mm/day",
+    "caveat": "0.05 degree grid; daily totals cannot establish flood timing at 06:30 WAT"
+  },
+  "data/interim/rainfall/chirps_20240705_lagos.tif": {
+    "source": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_daily/cogs/p05/2024/chirps-v2.0.2024.07.05.cog",
+    "retrieved_utc": "2026-10-04T04:22:38.117575+00:00",
+    "bytes": 1227,
+    "sha256": "f065cd9bd7522b62069658f46a0560948a1c34f74155f008843fd4fc22d94c51",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.05000000074505806,
+      0.05000000074505806
+    ],
+    "nodata": null,
+    "processing": "Native-grid AOI crop; no resampling",
+    "license": "Public domain; https://chc.ucsb.edu/data/chirps",
+    "epoch": "2024-07-05",
+    "units": "mm/day",
+    "caveat": "0.05 degree grid; daily totals cannot establish flood timing at 06:30 WAT"
+  },
+  "data/interim/rainfall/chirps_20240706_lagos.tif": {
+    "source": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_daily/cogs/p05/2024/chirps-v2.0.2024.07.06.cog",
+    "retrieved_utc": "2026-10-04T04:22:38.392544+00:00",
+    "bytes": 1259,
+    "sha256": "2a354d57aa13952778edb292d9d341b4a692f0322f979559265a34f275722e16",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.05000000074505806,
+      0.05000000074505806
+    ],
+    "nodata": null,
+    "processing": "Native-grid AOI crop; no resampling",
+    "license": "Public domain; https://chc.ucsb.edu/data/chirps",
+    "epoch": "2024-07-06",
+    "units": "mm/day",
+    "caveat": "0.05 degree grid; daily totals cannot establish flood timing at 06:30 WAT"
+  },
+  "data/interim/rainfall/chirps_20240707_lagos.tif": {
+    "source": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_daily/cogs/p05/2024/chirps-v2.0.2024.07.07.cog",
+    "retrieved_utc": "2026-10-04T04:22:38.645641+00:00",
+    "bytes": 1587,
+    "sha256": "7f8931d51fd5e3767282506f7322b38587f1e3008fc773f586eae96956d3536e",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.05000000074505806,
+      0.05000000074505806
+    ],
+    "nodata": null,
+    "processing": "Native-grid AOI crop; no resampling",
+    "license": "Public domain; https://chc.ucsb.edu/data/chirps",
+    "epoch": "2024-07-07",
+    "units": "mm/day",
+    "caveat": "0.05 degree grid; daily totals cannot establish flood timing at 06:30 WAT"
+  },
+  "data/interim/rainfall/chirps_20240708_lagos.tif": {
+    "source": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_daily/cogs/p05/2024/chirps-v2.0.2024.07.08.cog",
+    "retrieved_utc": "2026-10-04T04:22:38.934044+00:00",
+    "bytes": 1809,
+    "sha256": "e9f403442a411fd32ef4e00ddb1e0ebb68e52009a069d19555c20b457df9a7fd",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.05000000074505806,
+      0.05000000074505806
+    ],
+    "nodata": null,
+    "processing": "Native-grid AOI crop; no resampling",
+    "license": "Public domain; https://chc.ucsb.edu/data/chirps",
+    "epoch": "2024-07-08",
+    "units": "mm/day",
+    "caveat": "0.05 degree grid; daily totals cannot establish flood timing at 06:30 WAT"
+  },
+  "data/interim/rainfall/chirps_20240709_lagos.tif": {
+    "source": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_daily/cogs/p05/2024/chirps-v2.0.2024.07.09.cog",
+    "retrieved_utc": "2026-10-04T04:22:39.413317+00:00",
+    "bytes": 1301,
+    "sha256": "cfe1909e2b262806e56bb4d0ba913ecf358759a4678f62dcd409a196c30610c4",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.05000000074505806,
+      0.05000000074505806
+    ],
+    "nodata": null,
+    "processing": "Native-grid AOI crop; no resampling",
+    "license": "Public domain; https://chc.ucsb.edu/data/chirps",
+    "epoch": "2024-07-09",
+    "units": "mm/day",
+    "caveat": "0.05 degree grid; daily totals cannot establish flood timing at 06:30 WAT"
+  },
+  "data/interim/rainfall/chirps_20240710_lagos.tif": {
+    "source": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_daily/cogs/p05/2024/chirps-v2.0.2024.07.10.cog",
+    "retrieved_utc": "2026-10-04T04:22:39.981048+00:00",
+    "bytes": 1805,
+    "sha256": "bd9df4f49b990c1f42bf15ca30978dec44d200f77002cbc274f9d5c637bf5a8e",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.05000000074505806,
+      0.05000000074505806
+    ],
+    "nodata": null,
+    "processing": "Native-grid AOI crop; no resampling",
+    "license": "Public domain; https://chc.ucsb.edu/data/chirps",
+    "epoch": "2024-07-10",
+    "units": "mm/day",
+    "caveat": "0.05 degree grid; daily totals cannot establish flood timing at 06:30 WAT"
+  },
+  "data/interim/rainfall/chirps_20240711_lagos.tif": {
+    "source": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_daily/cogs/p05/2024/chirps-v2.0.2024.07.11.cog",
+    "retrieved_utc": "2026-10-04T04:22:40.518179+00:00",
+    "bytes": 1807,
+    "sha256": "00eb36885d1c5e36bc54e8b18dc0498734fe649eeb09ba8c051a510c5039a12a",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.05000000074505806,
+      0.05000000074505806
+    ],
+    "nodata": null,
+    "processing": "Native-grid AOI crop; no resampling",
+    "license": "Public domain; https://chc.ucsb.edu/data/chirps",
+    "epoch": "2024-07-11",
+    "units": "mm/day",
+    "caveat": "0.05 degree grid; daily totals cannot establish flood timing at 06:30 WAT"
+  },
+  "data/interim/rainfall/chirps_20240712_lagos.tif": {
+    "source": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_daily/cogs/p05/2024/chirps-v2.0.2024.07.12.cog",
+    "retrieved_utc": "2026-10-04T04:22:40.828057+00:00",
+    "bytes": 1707,
+    "sha256": "f777cbb693fb091c55eecb7eacf78f04de53a1e708aafe27f3aaca2bc8bdf422",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.05000000074505806,
+      0.05000000074505806
+    ],
+    "nodata": null,
+    "processing": "Native-grid AOI crop; no resampling",
+    "license": "Public domain; https://chc.ucsb.edu/data/chirps",
+    "epoch": "2024-07-12",
+    "units": "mm/day",
+    "caveat": "0.05 degree grid; daily totals cannot establish flood timing at 06:30 WAT"
+  },
+  "data/interim/rainfall/chirps_20240713_lagos.tif": {
+    "source": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_daily/cogs/p05/2024/chirps-v2.0.2024.07.13.cog",
+    "retrieved_utc": "2026-10-04T04:22:41.172166+00:00",
+    "bytes": 1353,
+    "sha256": "fff8bc890e8c516449fee5b51f5acc864fc4f7188103dda57a092f188d81c445",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.05000000074505806,
+      0.05000000074505806
+    ],
+    "nodata": null,
+    "processing": "Native-grid AOI crop; no resampling",
+    "license": "Public domain; https://chc.ucsb.edu/data/chirps",
+    "epoch": "2024-07-13",
+    "units": "mm/day",
+    "caveat": "0.05 degree grid; daily totals cannot establish flood timing at 06:30 WAT"
+  },
+  "data/interim/rainfall/chirps_20240714_lagos.tif": {
+    "source": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_daily/cogs/p05/2024/chirps-v2.0.2024.07.14.cog",
+    "retrieved_utc": "2026-10-04T04:22:41.844401+00:00",
+    "bytes": 1467,
+    "sha256": "3352ef9be9949c24cd07b1c88362ac5740bd3b32d8b2975253fa7d88f9327ad6",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.05000000074505806,
+      0.05000000074505806
+    ],
+    "nodata": null,
+    "processing": "Native-grid AOI crop; no resampling",
+    "license": "Public domain; https://chc.ucsb.edu/data/chirps",
+    "epoch": "2024-07-14",
+    "units": "mm/day",
+    "caveat": "0.05 degree grid; daily totals cannot establish flood timing at 06:30 WAT"
+  },
+  "data/interim/rainfall/chirps_20240715_lagos.tif": {
+    "source": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_daily/cogs/p05/2024/chirps-v2.0.2024.07.15.cog",
+    "retrieved_utc": "2026-10-04T04:22:42.172125+00:00",
+    "bytes": 1275,
+    "sha256": "fe225a78fb98f4f00c080c3d1fc66e4f3680ff02dffbd15b6b5ca61fb06e5815",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.05000000074505806,
+      0.05000000074505806
+    ],
+    "nodata": null,
+    "processing": "Native-grid AOI crop; no resampling",
+    "license": "Public domain; https://chc.ucsb.edu/data/chirps",
+    "epoch": "2024-07-15",
+    "units": "mm/day",
+    "caveat": "0.05 degree grid; daily totals cannot establish flood timing at 06:30 WAT"
+  },
+  "data/interim/landcover/lagos_worldcover2021_N06E000.tif": {
+    "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N06E000_Map.tif",
+    "retrieved_utc": "2026-10-04T04:22:46.458585+00:00",
+    "bytes": 296585,
+    "sha256": "da68d2db02d262b7dbdaa6303a94df4541525f2edd1a4404e23431c65debaab2",
+    "crs": "EPSG:4326",
+    "resolution": [
+      8.333333333333333e-05,
+      8.333333333333333e-05
+    ],
+    "nodata": 0.0,
+    "processing": "Native-grid AOI crop; no resampling",
+    "license": "CC BY 4.0; ESA WorldCover 2021 v200",
+    "epoch": "2021",
+    "caveat": "Pre-event land cover; urban development between 2021 and 2024 is not represented"
+  },
+  "data/interim/landcover/lagos_worldcover2021_N06E003.tif": {
+    "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N06E003_Map.tif",
+    "retrieved_utc": "2026-10-04T04:22:51.570923+00:00",
+    "bytes": 1889523,
+    "sha256": "32667589ac75d7da4512fbc6143f0a09051c6dd636c28e73ce070d56838cd860",
+    "crs": "EPSG:4326",
+    "resolution": [
+      8.333333333333333e-05,
+      8.333333333333333e-05
+    ],
+    "nodata": 0.0,
+    "processing": "Native-grid AOI crop; no resampling",
+    "license": "CC BY 4.0; ESA WorldCover 2021 v200",
+    "epoch": "2021",
+    "caveat": "Pre-event land cover; urban development between 2021 and 2024 is not represented"
+  },
+  "data/interim/boundaries/sentinel1_pair_coverage.geojson": {
+    "source": [
+      "S1A_IW_GRDH_1SDV_20240621T053018_20240621T053047_054417_069F0A_10B1",
+      "S1A_IW_GRDH_1SDV_20240703T053017_20240703T053046_054592_06A521_9E4B"
+    ],
+    "retrieved_utc": "2026-10-04T04:25:00.533433+00:00",
+    "bytes": 31052,
+    "sha256": "c1292a9b3922600c5f0c0c8336dd876d29bdcc451647c11e1cf0ab5b27134d65",
+    "processing": "Intersection of catalog footprints and Lagos AOI; not valid-pixel or flood coverage"
+  },
+  "data/raw/sentinel1/S1A_IW_GRDH_1SDV_20240621T053018_20240621T053047_054417_069F0A_10B1.zip": {
+    "source": "https://datapool.asf.alaska.edu/GRD_HD/SA/S1A_IW_GRDH_1SDV_20240621T053018_20240621T053047_054417_069F0A_10B1.zip",
+    "bytes": 1973790937,
+    "sha256": "d09c9187e961d966d7ae249f0dad411b4e6a21b4dae64c83c4069297b48a9575",
+    "md5": "79574677b598fbab4896c6894237e7df",
+    "expected_md5": "79574677b598fbab4896c6894237e7df",
+    "verified_utc": "2026-10-04T16:56:09.330560+00:00",
+    "retrieval_method": "Manual browser download; exact retrieval time not recorded",
+    "processing": "No extraction or preprocessing; provider size/MD5, ZIP CRC, SAFE metadata and component checks passed",
+    "acquisition_utc": "2024-06-21T05:30:18Z",
+    "relative_orbit": 95,
+    "license": "Copernicus Sentinel data terms"
+  },
+  "data/raw/sentinel1/S1A_IW_GRDH_1SDV_20240621T053018_20240621T053047_054417_069F0A_10B1.iso.xml": {
+    "source": "User-supplied ASF ISO metadata accompanying S1A_IW_GRDH_1SDV_20240621T053018_20240621T053047_054417_069F0A_10B1",
+    "bytes": 59031,
+    "sha256": "034a9ee562e071cd118fd741cfa8a1db50d5720cf99ef7a08dad67307d664d31",
+    "verified_utc": "2026-10-04T16:56:09.330560+00:00",
+    "processing": "XML well-formedness checked; no provider checksum available"
+  },
+  "data/raw/sentinel1/S1A_IW_GRDH_1SDV_20240703T053017_20240703T053046_054592_06A521_9E4B.zip": {
+    "source": "https://datapool.asf.alaska.edu/GRD_HD/SA/S1A_IW_GRDH_1SDV_20240703T053017_20240703T053046_054592_06A521_9E4B.zip",
+    "bytes": 1000659269,
+    "sha256": "f0965145678d0206ac2f56b82edb20906830bd55d13b84ba2aea853a1903d0af",
+    "md5": "b5d95a102457d2364d49ec1bf152a646",
+    "expected_md5": "b5d95a102457d2364d49ec1bf152a646",
+    "verified_utc": "2026-10-04T16:56:23.826164+00:00",
+    "retrieval_method": "Manual browser download; exact retrieval time not recorded",
+    "processing": "No extraction or preprocessing; provider size/MD5, ZIP CRC, SAFE metadata and component checks passed",
+    "acquisition_utc": "2024-07-03T05:30:17Z",
+    "relative_orbit": 95,
+    "license": "Copernicus Sentinel data terms"
+  },
+  "data/raw/sentinel1/S1A_IW_GRDH_1SDV_20240703T053017_20240703T053046_054592_06A521_9E4B.iso.xml": {
+    "source": "User-supplied ASF ISO metadata accompanying S1A_IW_GRDH_1SDV_20240703T053017_20240703T053046_054592_06A521_9E4B",
+    "bytes": 59030,
+    "sha256": "def902f497c4d3679e50acbaf908a126d44e78a9f903a501aab2d34f88aaae08",
+    "verified_utc": "2026-10-04T16:56:23.826164+00:00",
+    "processing": "XML well-formedness checked; no provider checksum available"
+  },
+  "data/processed/sentinel1/lagos_20240621_sigma0_linear.tif": {
+    "source": [
+      "data/interim/sentinel1/S1A_20240621_TC_linear.tif",
+      "data/interim/sentinel1/S1A_20240703_TC_linear.tif"
+    ],
+    "created_utc": "2026-10-05T00:05:00.408823+00:00",
+    "bytes": 173714575,
+    "sha256": "40e630f77716f91f42d521aff54b0647bdd15aaae996961df9e94c5e0039d074",
+    "crs": "EPSG:32631",
+    "processing": "Shared June 21 grid, nodata-aware resampling and Lagos polygon mask; see alignment report"
+  },
+  "data/processed/sentinel1/lagos_20240703_sigma0_linear.tif": {
+    "source": [
+      "data/interim/sentinel1/S1A_20240621_TC_linear.tif",
+      "data/interim/sentinel1/S1A_20240703_TC_linear.tif"
+    ],
+    "created_utc": "2026-10-05T00:05:00.408823+00:00",
+    "bytes": 171602575,
+    "sha256": "b7b9549b30ab205fb94071d76ae0eaab89fb98dd75e21e15ad1ddca81812854e",
+    "crs": "EPSG:32631",
+    "processing": "Shared June 21 grid, nodata-aware resampling and Lagos polygon mask; see alignment report"
+  },
+  "data/processed/sentinel1/lagos_pair_valid_mask.tif": {
+    "source": [
+      "data/interim/sentinel1/S1A_20240621_TC_linear.tif",
+      "data/interim/sentinel1/S1A_20240703_TC_linear.tif"
+    ],
+    "created_utc": "2026-10-05T00:05:00.408823+00:00",
+    "bytes": 246790,
+    "sha256": "f9bb061f59a9c69ad03738634ef44ace25e9dd23917154f53a87d7fa06f649f3",
+    "crs": "EPSG:32631",
+    "processing": "Shared June 21 grid, nodata-aware resampling and Lagos polygon mask; see alignment report"
+  },
+  "data/processed/sentinel1/lagos_20240621_sigma0_db.tif": {
+    "source": [
+      "data/processed/sentinel1/lagos_20240621_sigma0_linear.tif",
+      "data/processed/sentinel1/lagos_20240703_sigma0_linear.tif",
+      "data/processed/sentinel1/lagos_pair_valid_mask.tif",
+      "data/interim/water/lagos_jrc_occurrence_1984_2021.tif",
+      "data/interim/boundaries/sentinel1_pair_coverage.geojson"
+    ],
+    "created_utc": "2026-10-05T00:22:22.616097+00:00",
+    "sha256": "91a9fafbd1585174c3a0c8c7b2e55269a307f5ffd5b02453b4deea480221d3b6",
+    "bytes": 168179150,
+    "processing": "Coverage diagnostic or common-positive linear-to-dB/change; see sentinel1_change_report.json",
+    "crs": "EPSG:32631"
+  },
+  "data/processed/sentinel1/lagos_20240703_sigma0_db.tif": {
+    "source": [
+      "data/processed/sentinel1/lagos_20240621_sigma0_linear.tif",
+      "data/processed/sentinel1/lagos_20240703_sigma0_linear.tif",
+      "data/processed/sentinel1/lagos_pair_valid_mask.tif",
+      "data/interim/water/lagos_jrc_occurrence_1984_2021.tif",
+      "data/interim/boundaries/sentinel1_pair_coverage.geojson"
+    ],
+    "created_utc": "2026-10-05T00:22:22.616097+00:00",
+    "sha256": "84339a004582ca6412984a82e8886118398fc549b88be6548057b2d4dec78043",
+    "bytes": 167320652,
+    "processing": "Coverage diagnostic or common-positive linear-to-dB/change; see sentinel1_change_report.json",
+    "crs": "EPSG:32631"
+  },
+  "data/processed/sentinel1/lagos_delta_sigma0_db.tif": {
+    "source": [
+      "data/processed/sentinel1/lagos_20240621_sigma0_linear.tif",
+      "data/processed/sentinel1/lagos_20240703_sigma0_linear.tif",
+      "data/processed/sentinel1/lagos_pair_valid_mask.tif",
+      "data/interim/water/lagos_jrc_occurrence_1984_2021.tif",
+      "data/interim/boundaries/sentinel1_pair_coverage.geojson"
+    ],
+    "created_utc": "2026-10-05T00:22:22.616097+00:00",
+    "sha256": "c8644ba707b0943526a8cce8453211e10d3d878ae302b6d760a1048c8de6b052",
+    "bytes": 188066562,
+    "processing": "Coverage diagnostic or common-positive linear-to-dB/change; see sentinel1_change_report.json",
+    "crs": "EPSG:32631"
+  },
+  "data/processed/sentinel1/lagos_pair_positive_mask.tif": {
+    "source": [
+      "data/processed/sentinel1/lagos_20240621_sigma0_linear.tif",
+      "data/processed/sentinel1/lagos_20240703_sigma0_linear.tif",
+      "data/processed/sentinel1/lagos_pair_valid_mask.tif",
+      "data/interim/water/lagos_jrc_occurrence_1984_2021.tif",
+      "data/interim/boundaries/sentinel1_pair_coverage.geojson"
+    ],
+    "created_utc": "2026-10-05T00:22:22.616097+00:00",
+    "sha256": "7ec4f4e4ed05b8b4d09ccaa41e4c333a57f80bdb4e8b919a46cbea47066bfb2c",
+    "bytes": 281639,
+    "processing": "Coverage diagnostic or common-positive linear-to-dB/change; see sentinel1_change_report.json",
+    "crs": "EPSG:32631"
+  },
+  "data/processed/sentinel1/lagos_coverage_diagnostic.tif": {
+    "source": [
+      "data/processed/sentinel1/lagos_20240621_sigma0_linear.tif",
+      "data/processed/sentinel1/lagos_20240703_sigma0_linear.tif",
+      "data/processed/sentinel1/lagos_pair_valid_mask.tif",
+      "data/interim/water/lagos_jrc_occurrence_1984_2021.tif",
+      "data/interim/boundaries/sentinel1_pair_coverage.geojson"
+    ],
+    "created_utc": "2026-10-05T00:22:22.616097+00:00",
+    "sha256": "ffa906d8c1ad9b1fc549845a18803aa080d7a1c3fc039192acee165878abd798",
+    "bytes": 246491,
+    "processing": "Coverage diagnostic or common-positive linear-to-dB/change; see sentinel1_change_report.json",
+    "crs": "EPSG:32631"
+  },
+  "data/processed/sentinel1/lagos_candidate_threshold_agreement.tif": {
+    "source": [
+      "data/processed/sentinel1/lagos_20240621_sigma0_db.tif",
+      "data/processed/sentinel1/lagos_20240703_sigma0_db.tif",
+      "data/processed/sentinel1/lagos_delta_sigma0_db.tif",
+      "data/processed/sentinel1/lagos_pair_positive_mask.tif",
+      "data/interim/water/lagos_jrc_occurrence_1984_2021.tif"
+    ],
+    "sha256": "3170f7e06c826ac46c5695770819c230e22d4b2b1a7a6bae56a04da1c93681a4",
+    "bytes": 732758,
+    "created_utc": "2026-10-05T02:18:56.450513+00:00",
+    "processing": "Exploratory threshold sensitivity; see sentinel1_threshold_report.json"
+  },
+  "data/processed/sentinel1/lagos_candidate_exploratory_raw.tif": {
+    "source": [
+      "data/processed/sentinel1/lagos_20240621_sigma0_db.tif",
+      "data/processed/sentinel1/lagos_20240703_sigma0_db.tif",
+      "data/processed/sentinel1/lagos_delta_sigma0_db.tif",
+      "data/processed/sentinel1/lagos_pair_positive_mask.tif",
+      "data/interim/water/lagos_jrc_occurrence_1984_2021.tif"
+    ],
+    "sha256": "9c74f7c9a8ea4269b1da7c0f2409429ae976a1b61362e3afa24c37c209e48269",
+    "bytes": 329062,
+    "created_utc": "2026-10-05T02:18:56.450513+00:00",
+    "processing": "Exploratory threshold sensitivity; see sentinel1_threshold_report.json"
+  },
+  "data/processed/sentinel1/lagos_candidate_exploratory_clean.tif": {
+    "source": [
+      "data/processed/sentinel1/lagos_20240621_sigma0_db.tif",
+      "data/processed/sentinel1/lagos_20240703_sigma0_db.tif",
+      "data/processed/sentinel1/lagos_delta_sigma0_db.tif",
+      "data/processed/sentinel1/lagos_pair_positive_mask.tif",
+      "data/interim/water/lagos_jrc_occurrence_1984_2021.tif"
+    ],
+    "sha256": "d1f68da0b61074dc8b4b8dadb2305d55df06083473ff0d8bc948a32be3ad511e",
+    "bytes": 284056,
+    "created_utc": "2026-10-05T02:18:56.450513+00:00",
+    "processing": "Exploratory threshold sensitivity; see sentinel1_threshold_report.json"
+  },
+  "docs/acquisition/sentinel1_threshold_report.json": {
+    "source": [
+      "data/processed/sentinel1/lagos_20240621_sigma0_db.tif",
+      "data/processed/sentinel1/lagos_20240703_sigma0_db.tif",
+      "data/processed/sentinel1/lagos_delta_sigma0_db.tif",
+      "data/processed/sentinel1/lagos_pair_positive_mask.tif",
+      "data/interim/water/lagos_jrc_occurrence_1984_2021.tif"
+    ],
+    "sha256": "90245074d8c34b2268522e96ead7ddd8457bb990979a17e36934418c0cd583fc",
+    "bytes": 5015,
+    "created_utc": "2026-10-05T02:18:56.450513+00:00",
+    "processing": "Exploratory threshold sensitivity; see sentinel1_threshold_report.json"
+  },
+  "docs/acquisition/sentinel1_threshold_sensitivity.csv": {
+    "source": [
+      "data/processed/sentinel1/lagos_20240621_sigma0_db.tif",
+      "data/processed/sentinel1/lagos_20240703_sigma0_db.tif",
+      "data/processed/sentinel1/lagos_delta_sigma0_db.tif",
+      "data/processed/sentinel1/lagos_pair_positive_mask.tif",
+      "data/interim/water/lagos_jrc_occurrence_1984_2021.tif"
+    ],
+    "sha256": "fff582a3eb3527d2725bed5bae259cffdfe010a69ee602f52cbb8caee97b3a4f",
+    "bytes": 780,
+    "created_utc": "2026-10-05T02:18:56.450513+00:00",
+    "processing": "Exploratory threshold sensitivity; see sentinel1_threshold_report.json"
+  },
+  "docs/acquisition/sentinel1_candidate_audit.json": {
+    "source": [
+      "data/processed/sentinel1/lagos_candidate_exploratory_raw.tif",
+      "data/processed/sentinel1/lagos_candidate_exploratory_clean.tif",
+      "data/processed/sentinel1/lagos_20240621_sigma0_db.tif",
+      "data/processed/sentinel1/lagos_20240703_sigma0_db.tif",
+      "data/processed/sentinel1/lagos_delta_sigma0_db.tif",
+      "data/interim/dem/lagos_copernicus_dem30.tif"
+    ],
+    "created_utc": "2026-10-05T02:40:46.039683+00:00",
+    "sha256": "d01b7136f71bc120c18f7d1c56b754ffde52b390ecfd093a32765cf8788fe8d3",
+    "bytes": 6707,
+    "processing": "Candidate backscatter/DSM audit; no further filtering"
+  },
+  "data/processed/sentinel1/lagos_candidate_review_points.csv": {
+    "source": [
+      "data/processed/sentinel1/lagos_candidate_exploratory_raw.tif",
+      "data/processed/sentinel1/lagos_candidate_exploratory_clean.tif",
+      "data/processed/sentinel1/lagos_20240621_sigma0_db.tif",
+      "data/processed/sentinel1/lagos_20240703_sigma0_db.tif",
+      "data/processed/sentinel1/lagos_delta_sigma0_db.tif",
+      "data/interim/dem/lagos_copernicus_dem30.tif"
+    ],
+    "created_utc": "2026-10-05T02:40:46.039683+00:00",
+    "sha256": "6eaec505471ccb45640022192b69790c1ef6f7123024b579ac016fb3436b914f",
+    "bytes": 11684234,
+    "processing": "Candidate backscatter/DSM audit; no further filtering"
+  },
+  "data/processed/sentinel1/lagos_dsm_slope_30m.tif": {
+    "source": [
+      "data/interim/dem/lagos_copernicus_dem30.tif",
+      "data/processed/sentinel1/lagos_candidate_review_points.csv",
+      "data/processed/sentinel1/lagos_candidate_exploratory_clean.tif"
+    ],
+    "sha256": "fa978d7fc911475cbc0916d6007c1625bd39fcf54c94c5be83dec756787f771e",
+    "bytes": 19755330,
+    "processing": "Slope sensitivity and unfiltered clean candidate review polygons; see sentinel1_slope_report.json"
+  },
+  "data/processed/sentinel1/lagos_candidate_review_polygons.gpkg": {
+    "source": [
+      "data/interim/dem/lagos_copernicus_dem30.tif",
+      "data/processed/sentinel1/lagos_candidate_review_points.csv",
+      "data/processed/sentinel1/lagos_candidate_exploratory_clean.tif"
+    ],
+    "sha256": "a98d0e81d6e21a1f42360c09215ff71325ee1f4c12ad36ff17041ee8c2f3e3b9",
+    "bytes": 536576,
+    "processing": "Slope sensitivity and unfiltered clean candidate review polygons; see sentinel1_slope_report.json"
+  },
+  "docs/acquisition/sentinel1_candidate_polygons.csv": {
+    "source": [
+      "data/interim/dem/lagos_copernicus_dem30.tif",
+      "data/processed/sentinel1/lagos_candidate_review_points.csv",
+      "data/processed/sentinel1/lagos_candidate_exploratory_clean.tif"
+    ],
+    "sha256": "0da10723a71d48fe906989d27dfe8a11d08a67f86c5be22412096e0b9526888e",
+    "bytes": 86372,
+    "processing": "Slope sensitivity and unfiltered clean candidate review polygons; see sentinel1_slope_report.json"
+  },
+  "docs/acquisition/sentinel1_slope_report.json": {
+    "source": [
+      "data/interim/dem/lagos_copernicus_dem30.tif",
+      "data/processed/sentinel1/lagos_candidate_review_points.csv",
+      "data/processed/sentinel1/lagos_candidate_exploratory_clean.tif"
+    ],
+    "sha256": "7bfb90063ce0dfcd800b3f007503e5c9c11be97399da1ed768e45bbdde7edfaa",
+    "bytes": 2090,
+    "processing": "Slope sensitivity and unfiltered clean candidate review polygons; see sentinel1_slope_report.json"
+  },
+  "docs/acquisition/sentinel1_C0079_water_review.json": {
+    "source": [
+      "data/processed/sentinel1/lagos_candidate_review_polygons.gpkg",
+      "data/processed/sentinel1/lagos_candidate_exploratory_clean.tif",
+      "data/interim/water/lagos_jrc_occurrence_1984_2021.tif"
+    ],
+    "sha256": "5a03836b2734a6441a71fe3c1cf888446b56ecda6101bc33250f37330111a9b6",
+    "bytes": 1767,
+    "processing": "JRC occurrence nearest resampling to original SAR grid; polygon pixel-center inclusion"
+  },
+  "data/processed/sentinel1/lagos_candidate_water_review.gpkg": {
+    "source": [
+      "data/processed/sentinel1/lagos_candidate_review_polygons.gpkg",
+      "data/processed/sentinel1/lagos_candidate_exploratory_clean.tif",
+      "data/interim/water/lagos_jrc_occurrence_1984_2021.tif",
+      "docs/acquisition/sentinel1_C0079_water_review.json"
+    ],
+    "sha256": "2c7fc111be2cb57fa16e2109d637bade5e18b218992516ec8a98471aa0f27f5b",
+    "bytes": 548864,
+    "created_utc": "2026-10-05T23:22:50.437419+00:00",
+    "processing": "400 existing clean candidates only; not a rerun of full classification"
+  },
+  "docs/acquisition/sentinel1_polygon_water_review.csv": {
+    "source": [
+      "data/processed/sentinel1/lagos_candidate_review_polygons.gpkg",
+      "data/processed/sentinel1/lagos_candidate_exploratory_clean.tif",
+      "data/interim/water/lagos_jrc_occurrence_1984_2021.tif",
+      "docs/acquisition/sentinel1_C0079_water_review.json"
+    ],
+    "sha256": "8af2a4dd71722aab51b24999a13846aa8516e325cb99377e4bd98c7128fd028e",
+    "bytes": 114387,
+    "created_utc": "2026-10-05T23:22:50.437419+00:00",
+    "processing": "400 existing clean candidates only; not a rerun of full classification"
+  },
+  "docs/acquisition/sentinel1_water_sensitivity.json": {
+    "source": [
+      "data/processed/sentinel1/lagos_candidate_review_polygons.gpkg",
+      "data/processed/sentinel1/lagos_candidate_exploratory_clean.tif",
+      "data/interim/water/lagos_jrc_occurrence_1984_2021.tif",
+      "docs/acquisition/sentinel1_C0079_water_review.json"
+    ],
+    "sha256": "94f644d8b76f8915c6d8d76bb7711ebfa0ee7d7542a381e925fe888c637e2388",
+    "bytes": 3857,
+    "created_utc": "2026-10-05T23:22:50.437419+00:00",
+    "processing": "400 existing clean candidates only; not a rerun of full classification"
+  }
+}
