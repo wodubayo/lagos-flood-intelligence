@@ -50,3 +50,8 @@ data/processed/
 # QGIS temporary files
 *.qgz~
 *.aux.xml
+# Keep small acquisition inventories under version control
+!docs/acquisition/*.csv
+!docs/acquisition/*.geojson
+*.part
+*.part.tif

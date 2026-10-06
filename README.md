@@ -133,3 +133,17 @@ This project is designed as a research and analysis workspace for Lagos flood ri
 ## License
 
 This project does not currently include a specific license. If you plan to share or publish the work, consider adding an appropriate open-source license.
+
+## Phase 1 acquisition
+
+Public baseline inputs are acquired. See [the Phase 1 runbook](docs/phase1_acquisition.md) for commands and [the data catalog](docs/data_catalog.md) for source provenance, QA findings and outstanding data. Both selected Sentinel-1 archives were verified and registered on 2026-10-04; Phase 1 remains in progress while event-time suitability and remaining ancillary data are reviewed.
+
+## Phase 2 preprocessing
+
+See [the Phase 2 methods and results](docs/phase2_preprocessing.md) for SNAP settings, aligned rasters, coverage diagnostics and dB change analysis. Comparable positive measurements cover 71.05% of the Lagos AOI. An exploratory threshold comparison and candidate review rasters are available; final flood classification and validation remain pending.
+
+Phase 2 review outputs now include DSM slope sensitivity and 400 candidate polygons with radar and terrain attributes. See the Phase 2 write-up for QGIS instructions and remaining validation work.
+
+## Phase 3 validation preparation
+
+The provisional Phase 2 baseline is preserved with a checksum snapshot and review register. See [Phase 3 validation](docs/phase3_validation.md) for the evidence protocol. C0079 and C0373 remain unresolved diagnostic cases; no accuracy assessment or confirmed flood extent is available.

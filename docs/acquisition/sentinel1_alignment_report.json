@@ -1,0 +1,123 @@
+{
+  "created_utc": "2026-10-05T00:05:00.408823+00:00",
+  "source_grids": [
+    {
+      "path": "data/interim/sentinel1/S1A_20240621_TC_linear.tif",
+      "crs": "EPSG:32631",
+      "transform": [
+        10.0,
+        0.0,
+        476997.41337032366,
+        0.0,
+        -10.0,
+        793485.1080341006,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "bands": [
+        "Sigma0_VH",
+        "Sigma0_VV"
+      ]
+    },
+    {
+      "path": "data/interim/sentinel1/S1A_20240703_TC_linear.tif",
+      "crs": "EPSG:32631",
+      "transform": [
+        10.0,
+        0.0,
+        477170.7538096438,
+        0.0,
+        -10.0,
+        793526.4197720994,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "bands": [
+        "Sigma0_VH",
+        "Sigma0_VV"
+      ]
+    }
+  ],
+  "target_grid": {
+    "crs": "EPSG:32631",
+    "transform": [
+      10.0,
+      0.0,
+      466697.41337032366,
+      0.0,
+      -10.0,
+      740645.1080341006,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "width": 18466,
+    "height": 3659,
+    "reference_window": [
+      -1030,
+      5284,
+      18466,
+      3659
+    ],
+    "nodata": -9999.0
+  },
+  "band_statistics": [
+    [
+      {
+        "min": -0.005174647085368633,
+        "max": 80.05084991455078
+      },
+      {
+        "min": -0.002462910022586584,
+        "max": 2399.650390625
+      }
+    ],
+    [
+      {
+        "min": -0.0037445591297000647,
+        "max": 76.9922866821289
+      },
+      {
+        "min": 0.0006803522701375186,
+        "max": 2215.846435546875
+      }
+    ]
+  ],
+  "counts": {
+    "aoi_pixels": 37601742,
+    "common_valid_pixels": 26804975,
+    "valid_pixels_both_bands_per_date": [
+      26837787,
+      26821376
+    ],
+    "nonpositive_valid_values_per_date_band": [
+      [
+        74204,
+        145
+      ],
+      [
+        32464,
+        0
+      ]
+    ]
+  },
+  "common_valid_aoi_fraction": 0.712865244381497,
+  "checks": {
+    "identical_output_grids": true,
+    "reference_sample_preserved": true,
+    "full_output_mask_consistency": true,
+    "band_names_and_nodata": true,
+    "common_pixel_count_verified": 26804975
+  },
+  "notes": [
+    "Original exports unchanged; source zero interpreted as nodata using SNAP metadata.",
+    "July 3 bilinearly resampled once onto the June 21 grid; June 21 pixel positions retained.",
+    "Individual rasters retain their own validity; use the common mask for pair comparisons.",
+    "Negative/zero valid values retained after resampling; mask nonpositive values before dB conversion.",
+    "No flood classification or subpixel geolocation validation performed."
+  ]
+}

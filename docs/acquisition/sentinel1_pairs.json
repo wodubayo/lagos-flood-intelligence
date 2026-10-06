@@ -1,0 +1,58 @@
+[
+  {
+    "before": "S1A_IW_GRDH_1SDV_20240621T053018_20240621T053047_054417_069F0A_10B1",
+    "after": "S1A_IW_GRDH_1SDV_20240703T053017_20240703T053046_054592_06A521_9E4B",
+    "before_utc": "2024-06-21T05:30:18Z",
+    "after_utc": "2024-07-03T05:30:17Z",
+    "relative_orbit": 95,
+    "pass_direction": "DESCENDING",
+    "frame_before": 571,
+    "frame_after": 571,
+    "common_aoi_fraction": 0.9145652047103324,
+    "baseline_days": 11.999988425925926,
+    "after_days_from_event_start": 0.2710300925925926,
+    "period": "during"
+  },
+  {
+    "before": "S1A_IW_GRDH_1SDV_20240621T053018_20240621T053047_054417_069F0A_10B1",
+    "after": "S1A_IW_GRDH_1SDV_20240715T053017_20240715T053046_054767_06AB2E_4470",
+    "before_utc": "2024-06-21T05:30:18Z",
+    "after_utc": "2024-07-15T05:30:17Z",
+    "relative_orbit": 95,
+    "pass_direction": "DESCENDING",
+    "frame_before": 571,
+    "frame_after": 571,
+    "common_aoi_fraction": 0.9151135639617131,
+    "baseline_days": 23.999988425925928,
+    "after_days_from_event_start": 12.271030092592593,
+    "period": "after"
+  },
+  {
+    "before": "S1A_IW_GRDH_1SDV_20240621T175358_20240621T175423_054425_069F48_686B",
+    "after": "S1A_IW_GRDH_1SDV_20240703T175357_20240703T175422_054600_06A561_3E0B",
+    "before_utc": "2024-06-21T17:53:58Z",
+    "after_utc": "2024-07-03T17:53:57Z",
+    "relative_orbit": 103,
+    "pass_direction": "ASCENDING",
+    "frame_before": 1201,
+    "frame_after": 1201,
+    "common_aoi_fraction": 0.030131300226209412,
+    "baseline_days": 11.999988425925926,
+    "after_days_from_event_start": 0.7874652777777778,
+    "period": "during"
+  },
+  {
+    "before": "S1A_IW_GRDH_1SDV_20240621T175358_20240621T175423_054425_069F48_686B",
+    "after": "S1A_IW_GRDH_1SDV_20240715T175357_20240715T175422_054775_06AB70_96EB",
+    "before_utc": "2024-06-21T17:53:58Z",
+    "after_utc": "2024-07-15T17:53:57Z",
+    "relative_orbit": 103,
+    "pass_direction": "ASCENDING",
+    "frame_before": 1201,
+    "frame_after": 1201,
+    "common_aoi_fraction": 0.030369032022434975,
+    "baseline_days": 23.999988425925928,
+    "after_days_from_event_start": 12.787465277777779,
+    "period": "after"
+  }
+]

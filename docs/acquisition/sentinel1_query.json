@@ -1,0 +1,14 @@
+{
+  "url": "https://api.daac.asf.alaska.edu/services/search/param?platform=Sentinel-1A&processingLevel=GRD_HD&beamMode=IW&polarization=VV%2BVH&start=2024-06-15T00%3A00%3A00Z&end=2024-07-16T00%3A00%3A00Z&intersectsWith=POLYGON+%28%282.698830793306513+6.367825533321763%2C+4.3686295177381+6.367825533321763%2C+4.3686295177381+6.700437230793625%2C+2.698830793306513+6.700437230793625%2C+2.698830793306513+6.367825533321763%29%29&output=geojson&maxResults=1000",
+  "parameters": {
+    "platform": "Sentinel-1A",
+    "processingLevel": "GRD_HD",
+    "beamMode": "IW",
+    "polarization": "VV+VH",
+    "start": "2024-06-15T00:00:00Z",
+    "end": "2024-07-16T00:00:00Z",
+    "intersectsWith": "POLYGON ((2.698830793306513 6.367825533321763, 4.3686295177381 6.367825533321763, 4.3686295177381 6.700437230793625, 2.698830793306513 6.700437230793625, 2.698830793306513 6.367825533321763))",
+    "output": "geojson",
+    "maxResults": 1000
+  }
+}

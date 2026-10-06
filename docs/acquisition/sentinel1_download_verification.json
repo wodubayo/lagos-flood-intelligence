@@ -1,0 +1,138 @@
+{
+  "verified_utc": "2026-10-04T16:56:23.840345+00:00",
+  "results": [
+    {
+      "scene_id": "S1A_IW_GRDH_1SDV_20240621T053018_20240621T053047_054417_069F0A_10B1",
+      "role": "before",
+      "bytes": 1973790937,
+      "md5": "79574677b598fbab4896c6894237e7df",
+      "sha256": "d09c9187e961d966d7ae249f0dad411b4e6a21b4dae64c83c4069297b48a9575",
+      "zip_crc": "passed",
+      "safe_metadata": {
+        "mode": [
+          "IW"
+        ],
+        "orbitNumber": [
+          "54417",
+          "54417"
+        ],
+        "relativeOrbitNumber": [
+          "95",
+          "95"
+        ],
+        "pass": [
+          "DESCENDING"
+        ],
+        "transmitterReceiverPolarisation": [
+          "VV",
+          "VH"
+        ],
+        "startTime": [
+          "2024-06-21T05:30:18.437523"
+        ],
+        "stopTime": [
+          "2024-06-21T05:30:47.450228"
+        ]
+      },
+      "components": {
+        "vv": {
+          "measurement": [
+            "S1A_IW_GRDH_1SDV_20240621T053018_20240621T053047_054417_069F0A_10B1.SAFE/measurement/s1a-iw-grd-vv-20240621t053018-20240621t053047-054417-069f0a-001.tiff"
+          ],
+          "annotation": [
+            "S1A_IW_GRDH_1SDV_20240621T053018_20240621T053047_054417_069F0A_10B1.SAFE/annotation/rfi/rfi-s1a-iw-grd-vv-20240621t053018-20240621t053047-054417-069f0a-001.xml",
+            "S1A_IW_GRDH_1SDV_20240621T053018_20240621T053047_054417_069F0A_10B1.SAFE/annotation/s1a-iw-grd-vv-20240621t053018-20240621t053047-054417-069f0a-001.xml"
+          ],
+          "calibration": [
+            "S1A_IW_GRDH_1SDV_20240621T053018_20240621T053047_054417_069F0A_10B1.SAFE/annotation/calibration/calibration-s1a-iw-grd-vv-20240621t053018-20240621t053047-054417-069f0a-001.xml"
+          ],
+          "noise": [
+            "S1A_IW_GRDH_1SDV_20240621T053018_20240621T053047_054417_069F0A_10B1.SAFE/annotation/calibration/noise-s1a-iw-grd-vv-20240621t053018-20240621t053047-054417-069f0a-001.xml"
+          ]
+        },
+        "vh": {
+          "measurement": [
+            "S1A_IW_GRDH_1SDV_20240621T053018_20240621T053047_054417_069F0A_10B1.SAFE/measurement/s1a-iw-grd-vh-20240621t053018-20240621t053047-054417-069f0a-002.tiff"
+          ],
+          "annotation": [
+            "S1A_IW_GRDH_1SDV_20240621T053018_20240621T053047_054417_069F0A_10B1.SAFE/annotation/rfi/rfi-s1a-iw-grd-vh-20240621t053018-20240621t053047-054417-069f0a-002.xml",
+            "S1A_IW_GRDH_1SDV_20240621T053018_20240621T053047_054417_069F0A_10B1.SAFE/annotation/s1a-iw-grd-vh-20240621t053018-20240621t053047-054417-069f0a-002.xml"
+          ],
+          "calibration": [
+            "S1A_IW_GRDH_1SDV_20240621T053018_20240621T053047_054417_069F0A_10B1.SAFE/annotation/calibration/calibration-s1a-iw-grd-vh-20240621t053018-20240621t053047-054417-069f0a-002.xml"
+          ],
+          "noise": [
+            "S1A_IW_GRDH_1SDV_20240621T053018_20240621T053047_054417_069F0A_10B1.SAFE/annotation/calibration/noise-s1a-iw-grd-vh-20240621t053018-20240621t053047-054417-069f0a-002.xml"
+          ]
+        }
+      }
+    },
+    {
+      "scene_id": "S1A_IW_GRDH_1SDV_20240703T053017_20240703T053046_054592_06A521_9E4B",
+      "role": "after",
+      "bytes": 1000659269,
+      "md5": "b5d95a102457d2364d49ec1bf152a646",
+      "sha256": "f0965145678d0206ac2f56b82edb20906830bd55d13b84ba2aea853a1903d0af",
+      "zip_crc": "passed",
+      "safe_metadata": {
+        "mode": [
+          "IW"
+        ],
+        "orbitNumber": [
+          "54592",
+          "54592"
+        ],
+        "relativeOrbitNumber": [
+          "95",
+          "95"
+        ],
+        "pass": [
+          "DESCENDING"
+        ],
+        "transmitterReceiverPolarisation": [
+          "VV",
+          "VH"
+        ],
+        "startTime": [
+          "2024-07-03T05:30:17.566088"
+        ],
+        "stopTime": [
+          "2024-07-03T05:30:46.584668"
+        ]
+      },
+      "components": {
+        "vv": {
+          "measurement": [
+            "S1A_IW_GRDH_1SDV_20240703T053017_20240703T053046_054592_06A521_9E4B.SAFE/measurement/s1a-iw-grd-vv-20240703t053017-20240703t053046-054592-06a521-001.tiff"
+          ],
+          "annotation": [
+            "S1A_IW_GRDH_1SDV_20240703T053017_20240703T053046_054592_06A521_9E4B.SAFE/annotation/rfi/rfi-s1a-iw-grd-vv-20240703t053017-20240703t053046-054592-06a521-001.xml",
+            "S1A_IW_GRDH_1SDV_20240703T053017_20240703T053046_054592_06A521_9E4B.SAFE/annotation/s1a-iw-grd-vv-20240703t053017-20240703t053046-054592-06a521-001.xml"
+          ],
+          "calibration": [
+            "S1A_IW_GRDH_1SDV_20240703T053017_20240703T053046_054592_06A521_9E4B.SAFE/annotation/calibration/calibration-s1a-iw-grd-vv-20240703t053017-20240703t053046-054592-06a521-001.xml"
+          ],
+          "noise": [
+            "S1A_IW_GRDH_1SDV_20240703T053017_20240703T053046_054592_06A521_9E4B.SAFE/annotation/calibration/noise-s1a-iw-grd-vv-20240703t053017-20240703t053046-054592-06a521-001.xml"
+          ]
+        },
+        "vh": {
+          "measurement": [
+            "S1A_IW_GRDH_1SDV_20240703T053017_20240703T053046_054592_06A521_9E4B.SAFE/measurement/s1a-iw-grd-vh-20240703t053017-20240703t053046-054592-06a521-002.tiff"
+          ],
+          "annotation": [
+            "S1A_IW_GRDH_1SDV_20240703T053017_20240703T053046_054592_06A521_9E4B.SAFE/annotation/rfi/rfi-s1a-iw-grd-vh-20240703t053017-20240703t053046-054592-06a521-002.xml",
+            "S1A_IW_GRDH_1SDV_20240703T053017_20240703T053046_054592_06A521_9E4B.SAFE/annotation/s1a-iw-grd-vh-20240703t053017-20240703t053046-054592-06a521-002.xml"
+          ],
+          "calibration": [
+            "S1A_IW_GRDH_1SDV_20240703T053017_20240703T053046_054592_06A521_9E4B.SAFE/annotation/calibration/calibration-s1a-iw-grd-vh-20240703t053017-20240703t053046-054592-06a521-002.xml"
+          ],
+          "noise": [
+            "S1A_IW_GRDH_1SDV_20240703T053017_20240703T053046_054592_06A521_9E4B.SAFE/annotation/calibration/noise-s1a-iw-grd-vh-20240703t053017-20240703t053046-054592-06a521-002.xml"
+          ]
+        }
+      }
+    }
+  ],
+  "status": "Both selected archives verified; scientific suitability remains to be assessed"
+}

@@ -1,0 +1,68 @@
+{
+  "status": "provisional; no slope cutoff selected or applied",
+  "method": "DSM reprojected bilinearly to EPSG:32631 at 30m; Horn 3x3 slope in degrees; require nine valid samples; one-cell edge nodata; nearest slope-cell sampling at SAR pixel centers",
+  "sensitivity": {
+    "raw": {
+      "pixels": 63641,
+      "unknown_slope_pixels": 1,
+      "median_slope_deg": 0.7211841940879822,
+      "cutoffs": [
+        {
+          "max_slope_deg": 2,
+          "retained_pixels": 49093,
+          "retained_area_km2": 4.9093
+        },
+        {
+          "max_slope_deg": 5,
+          "retained_pixels": 59743,
+          "retained_area_km2": 5.9743
+        },
+        {
+          "max_slope_deg": 10,
+          "retained_pixels": 63426,
+          "retained_area_km2": 6.3426
+        }
+      ]
+    },
+    "clean": {
+      "pixels": 31252,
+      "unknown_slope_pixels": 0,
+      "median_slope_deg": 0.49869540333747864,
+      "cutoffs": [
+        {
+          "max_slope_deg": 2,
+          "retained_pixels": 26356,
+          "retained_area_km2": 2.6356
+        },
+        {
+          "max_slope_deg": 5,
+          "retained_pixels": 30166,
+          "retained_area_km2": 3.0166
+        },
+        {
+          "max_slope_deg": 10,
+          "retained_pixels": 31245,
+          "retained_area_km2": 3.1245000000000003
+        }
+      ]
+    }
+  },
+  "patch_count": 400,
+  "polygon_area_km2": 3.1252,
+  "minimum_patch_pixels": 25,
+  "maximum_patch_pixels": 2200,
+  "checks": [
+    "input hashes match",
+    "candidate point/mask consistency",
+    "valid polygon geometry",
+    "exact component-ID raster/vector roundtrip",
+    "GeoPackage reopen and area conservation"
+  ],
+  "limitations": [
+    "DSM slope can reflect buildings/vegetation.",
+    "30m slope cannot resolve street-scale drainage.",
+    "Sensitivity does not repeat cleanup after slope screening.",
+    "Unknown slope is separate from failing slope cutoff.",
+    "Polygons represent original clean candidates, not slope-filtered or confirmed flood extent."
+  ]
+}

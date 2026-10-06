@@ -1,0 +1,161 @@
+{
+  "created_utc": "2026-10-05T02:18:56.450513+00:00",
+  "status": "exploratory, not validated flood extent",
+  "common_positive_pixels": 26715236,
+  "excluded_historical_water_pixels": 7879,
+  "excluded_unknown_water_pixels": 0,
+  "eligible_pixels": 26707357,
+  "eligible_area_km2": 2670.7357,
+  "thresholds": [
+    {
+      "july_vh_max_db": -18,
+      "june_vh_min_exclusive_db": -18,
+      "delta_vh_max_db": -2,
+      "raw_pixels": 349470,
+      "water_ge90_pixels": 135,
+      "water_unknown_pixels": 0,
+      "retained_pixels": 349335,
+      "vv_decrease_pixels": 216651,
+      "retained_area_km2": 34.9335,
+      "percent_eligible": 1.3080103733214785
+    },
+    {
+      "july_vh_max_db": -18,
+      "june_vh_min_exclusive_db": -18,
+      "delta_vh_max_db": -3,
+      "raw_pixels": 229471,
+      "water_ge90_pixels": 108,
+      "water_unknown_pixels": 0,
+      "retained_pixels": 229363,
+      "vv_decrease_pixels": 149984,
+      "retained_area_km2": 22.936300000000003,
+      "percent_eligible": 0.8588008165690075
+    },
+    {
+      "july_vh_max_db": -18,
+      "june_vh_min_exclusive_db": -18,
+      "delta_vh_max_db": -4,
+      "raw_pixels": 129752,
+      "water_ge90_pixels": 87,
+      "water_unknown_pixels": 0,
+      "retained_pixels": 129665,
+      "vv_decrease_pixels": 89843,
+      "retained_area_km2": 12.9665,
+      "percent_eligible": 0.48550292715224497
+    },
+    {
+      "july_vh_max_db": -21,
+      "june_vh_min_exclusive_db": -21,
+      "delta_vh_max_db": -2,
+      "raw_pixels": 84722,
+      "water_ge90_pixels": 104,
+      "water_unknown_pixels": 0,
+      "retained_pixels": 84618,
+      "vv_decrease_pixels": 57926,
+      "retained_area_km2": 8.4618,
+      "percent_eligible": 0.31683404688827876
+    },
+    {
+      "july_vh_max_db": -21,
+      "june_vh_min_exclusive_db": -21,
+      "delta_vh_max_db": -3,
+      "raw_pixels": 63729,
+      "water_ge90_pixels": 88,
+      "water_unknown_pixels": 0,
+      "retained_pixels": 63641,
+      "vv_decrease_pixels": 45758,
+      "retained_area_km2": 6.3641000000000005,
+      "percent_eligible": 0.2382901460447771
+    },
+    {
+      "july_vh_max_db": -21,
+      "june_vh_min_exclusive_db": -21,
+      "delta_vh_max_db": -4,
+      "raw_pixels": 44670,
+      "water_ge90_pixels": 69,
+      "water_unknown_pixels": 0,
+      "retained_pixels": 44601,
+      "vv_decrease_pixels": 33954,
+      "retained_area_km2": 4.460100000000001,
+      "percent_eligible": 0.16699892842260655
+    },
+    {
+      "july_vh_max_db": -24,
+      "june_vh_min_exclusive_db": -24,
+      "delta_vh_max_db": -2,
+      "raw_pixels": 38256,
+      "water_ge90_pixels": 196,
+      "water_unknown_pixels": 0,
+      "retained_pixels": 38060,
+      "vv_decrease_pixels": 24134,
+      "retained_area_km2": 3.806,
+      "percent_eligible": 0.1425075495115447
+    },
+    {
+      "july_vh_max_db": -24,
+      "june_vh_min_exclusive_db": -24,
+      "delta_vh_max_db": -3,
+      "raw_pixels": 29789,
+      "water_ge90_pixels": 172,
+      "water_unknown_pixels": 0,
+      "retained_pixels": 29617,
+      "vv_decrease_pixels": 19865,
+      "retained_area_km2": 2.9617,
+      "percent_eligible": 0.11089453741154544
+    },
+    {
+      "july_vh_max_db": -24,
+      "june_vh_min_exclusive_db": -24,
+      "delta_vh_max_db": -4,
+      "raw_pixels": 22489,
+      "water_ge90_pixels": 142,
+      "water_unknown_pixels": 0,
+      "retained_pixels": 22347,
+      "vv_decrease_pixels": 15909,
+      "retained_area_km2": 2.2347,
+      "percent_eligible": 0.0836735735400549
+    }
+  ],
+  "cleanup_preview": [
+    {
+      "min_component_pixels": 9,
+      "area_threshold_m2": 900,
+      "retained_pixels": 44289,
+      "retained_area_km2": 4.4289000000000005
+    },
+    {
+      "min_component_pixels": 25,
+      "area_threshold_m2": 2500,
+      "retained_pixels": 31252,
+      "retained_area_km2": 3.1252
+    },
+    {
+      "min_component_pixels": 100,
+      "area_threshold_m2": 10000,
+      "retained_pixels": 16598,
+      "retained_area_km2": 1.6598000000000002
+    }
+  ],
+  "preview_settings": {
+    "july_vh_max_db": -21,
+    "delta_vh_max_db": -3,
+    "june_vh_min_exclusive_db": -21,
+    "min_component_pixels": 25,
+    "connectivity": 8
+  },
+  "checks": [
+    "input SHA256 matched manifest",
+    "grids matched",
+    "water partitions matched counts",
+    "cleanup never adds candidates",
+    "all three raster outputs reopened and compared exactly"
+  ],
+  "limitations": [
+    "Thresholds are deliberately illustrative, not calibrated or selected for accuracy.",
+    "VV decrease is reported as supporting information, not required.",
+    "Darkening rule can miss urban or vegetated flooding with increased backscatter.",
+    "No terrain filter or independent validation applied.",
+    "JRC v1.4 limitations and prior coverage loss remain.",
+    "Visual patch has no recorded coordinates; statistics are study-area-wide."
+  ]
+}

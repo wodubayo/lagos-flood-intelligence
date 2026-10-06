@@ -1,0 +1,35 @@
+{
+  "bbox": [
+    2.698830793306513,
+    6.367825533321763,
+    4.3686295177381,
+    6.700437230793625
+  ],
+  "lga_count": 20,
+  "lga_names": [
+    "Agege",
+    "Ajeromi/Ifelodun",
+    "Alimosho",
+    "Amuwo Odofin",
+    "Apapa",
+    "Badagry",
+    "Epe",
+    "Eti Osa",
+    "Ibeju Lekki",
+    "Ifako/Ijaye",
+    "Ikeja",
+    "Ikorodu",
+    "Kosofe",
+    "Lagos Island",
+    "Lagos Mainland",
+    "Mushin",
+    "Ojo",
+    "Oshodi/Isolo",
+    "Shomolu",
+    "Surulere"
+  ],
+  "area_km2": 3760.194126786849,
+  "lga_union_coverage": 0.9443184038992395,
+  "analysis_crs": "EPSG:32631",
+  "source_crs": "EPSG:4326"
+}
