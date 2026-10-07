@@ -1,0 +1,35 @@
+{
+  "checked_utc": "2026-10-07T04:51:04.802299+00:00",
+  "product": "MCDWD_L3",
+  "collection": "061",
+  "tile": "h18v08",
+  "tile_selection": "Geographic 10-degree grid: expected longitude 0 to 10 E, latitude 0 to 10 N; confirm bounds from downloaded HDF metadata.",
+  "download_check": "July 3 unauthenticated GET redirected to urs.earthdata.nasa.gov/oauth/authorize and returned HTML, not HDF. No credentials supplied.",
+  "quality_status": "Not assessed; no HDF downloaded; no reference labels created.",
+  "files": [
+    {
+      "date": "2024-07-02",
+      "filename": "MCDWD_L3.A2024184.h18v08.061.2025277150034.hdf",
+      "listed_bytes": 11892495,
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/61/MCDWD_L3/2024/184/MCDWD_L3.A2024184.h18v08.061.2025277150034.hdf",
+      "directory_url": "https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/61/MCDWD_L3/2024/184/",
+      "status": "listed_not_downloaded"
+    },
+    {
+      "date": "2024-07-03",
+      "filename": "MCDWD_L3.A2024185.h18v08.061.2025277150043.hdf",
+      "listed_bytes": 7509801,
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/61/MCDWD_L3/2024/185/MCDWD_L3.A2024185.h18v08.061.2025277150043.hdf",
+      "directory_url": "https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/61/MCDWD_L3/2024/185/",
+      "status": "listed_not_downloaded"
+    },
+    {
+      "date": "2024-07-04",
+      "filename": "MCDWD_L3.A2024186.h18v08.061.2025277150051.hdf",
+      "listed_bytes": 8963374,
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/61/MCDWD_L3/2024/186/MCDWD_L3.A2024186.h18v08.061.2025277150051.hdf",
+      "directory_url": "https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/61/MCDWD_L3/2024/186/",
+      "status": "listed_not_downloaded"
+    }
+  ]
+}

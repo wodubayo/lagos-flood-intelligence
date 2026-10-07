@@ -1,0 +1,119 @@
+{
+  "scope": "LGA polygons intersected with rasterized Lagos state AOI, pixel centers; common-positive VH/VV support",
+  "interpretation": "geographic consistency, not flood validation",
+  "boundary_audit": {
+    "state_aoi_pixels": 37601742,
+    "state_valid_pixels": 26715236,
+    "aoi_pixels_outside_lga_union": 2093691,
+    "valid_pixels_outside_lga_union": 160929,
+    "aoi_pixels_in_multiple_lgas": 0,
+    "state_candidate_pixels": 31252,
+    "candidate_pixels_outside_lga_union": 56
+  },
+  "alimosho": {
+    "lga": "Alimosho",
+    "shape_id": "59680162B54313559089261",
+    "aoi_pixels": 1826886,
+    "aoi_area_km2": 182.6886,
+    "valid_pixels": 1825646,
+    "valid_area_km2": 182.5646,
+    "valid_coverage_pct": 99.93212493828295,
+    "candidate_eligible_pixels": 1825646,
+    "clean_candidate_pixels": 426,
+    "vh_median_change_db": 0.779749870300293,
+    "vh_decrease_ge3_pixels": 50442,
+    "vh_decrease_ge3_area_km2": 5.0442,
+    "vh_decrease_ge3_pct_valid": 2.762967190791643,
+    "vv_median_change_db": 1.846517562866211,
+    "vv_decrease_ge3_pixels": 25226,
+    "vv_decrease_ge3_area_km2": 2.5226,
+    "vv_decrease_ge3_pct_valid": 1.3817574710540816,
+    "both_decrease_ge3_pixels": 8869,
+    "both_decrease_ge3_pct_valid": 0.4858006426218445,
+    "clean_candidate_area_km2": 0.0426,
+    "clean_candidate_pct_eligible": 0.02333420608376432,
+    "vh_decrease_ge3_area_km2_rank": 6,
+    "vh_decrease_ge3_pct_valid_rank": 13,
+    "vv_decrease_ge3_pct_valid_rank": 14,
+    "vh_median_change_db_rank": 16,
+    "clean_candidate_area_km2_rank": 5
+  },
+  "top_vh_decrease_area": [
+    {
+      "lga": "Epe",
+      "vh_decrease_ge3_area_km2": 40.6573,
+      "vh_decrease_ge3_pct_valid": 4.45159174681834,
+      "valid_coverage_pct": 69.49136022575169
+    },
+    {
+      "lga": "Ibeju Lekki",
+      "vh_decrease_ge3_area_km2": 30.42,
+      "vh_decrease_ge3_pct_valid": 7.9447347328289135,
+      "valid_coverage_pct": 92.11159574496236
+    },
+    {
+      "lga": "Amuwo Odofin",
+      "vh_decrease_ge3_area_km2": 9.341000000000001,
+      "vh_decrease_ge3_pct_valid": 10.232720166159833,
+      "valid_coverage_pct": 80.02917624450535
+    },
+    {
+      "lga": "Eti Osa",
+      "vh_decrease_ge3_area_km2": 7.409800000000001,
+      "vh_decrease_ge3_pct_valid": 4.616694942869194,
+      "valid_coverage_pct": 90.26504725836259
+    },
+    {
+      "lga": "Badagry",
+      "vh_decrease_ge3_area_km2": 6.923,
+      "vh_decrease_ge3_pct_valid": 7.101474250872939,
+      "valid_coverage_pct": 22.225753492366643
+    }
+  ],
+  "top_vh_decrease_fraction": [
+    {
+      "lga": "Amuwo Odofin",
+      "vh_decrease_ge3_area_km2": 9.341000000000001,
+      "vh_decrease_ge3_pct_valid": 10.232720166159833,
+      "valid_coverage_pct": 80.02917624450535
+    },
+    {
+      "lga": "Ibeju Lekki",
+      "vh_decrease_ge3_area_km2": 30.42,
+      "vh_decrease_ge3_pct_valid": 7.9447347328289135,
+      "valid_coverage_pct": 92.11159574496236
+    },
+    {
+      "lga": "Oshodi/Isolo",
+      "vh_decrease_ge3_area_km2": 4.1666,
+      "vh_decrease_ge3_pct_valid": 7.760433448872515,
+      "valid_coverage_pct": 99.42721797939244
+    },
+    {
+      "lga": "Ajeromi/Ifelodun",
+      "vh_decrease_ge3_area_km2": 0.8877,
+      "vh_decrease_ge3_pct_valid": 7.123426177808806,
+      "valid_coverage_pct": 99.84776494908138
+    },
+    {
+      "lga": "Badagry",
+      "vh_decrease_ge3_area_km2": 6.923,
+      "vh_decrease_ge3_pct_valid": 7.101474250872939,
+      "valid_coverage_pct": 22.225753492366643
+    }
+  ],
+  "checks": [
+    "Input hashes match",
+    "20 unique valid LGA geometries",
+    "All sampled changes finite and not nodata",
+    "Counts reconcile to state totals when no overlaps",
+    "GeoPackage reopened"
+  ],
+  "limitations": [
+    "Ranking describes observed pixels, not missing portions of LGAs",
+    "Pixel changes are not independent samples",
+    "3 dB is a descriptive cutoff, not a flood label",
+    "Neighborhoods are not equated to administrative units",
+    "Boundary gaps reported separately; no invented assignment"
+  ]
+}

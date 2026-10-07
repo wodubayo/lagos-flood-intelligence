@@ -915,5 +915,328 @@
     "bytes": 3857,
     "created_utc": "2026-10-05T23:22:50.437419+00:00",
     "processing": "400 existing clean candidates only; not a rerun of full classification"
+  },
+  "docs/validation/lga_change_summary.csv": {
+    "source": [
+      "data/interim/boundaries/lagos_lgas.geojson",
+      "data/processed/sentinel1/lagos_delta_sigma0_db.tif",
+      "data/processed/sentinel1/lagos_pair_positive_mask.tif",
+      "data/processed/sentinel1/lagos_candidate_exploratory_clean.tif"
+    ],
+    "sha256": "c50b6c65ecd4375926bb7c9b593ef4cae699ecbf4ec2c4794a6f04b7950e8d9b",
+    "bytes": 5846,
+    "processing": "LGA geographic-consistency summary, not accuracy"
+  },
+  "docs/validation/lga_change_summary.gpkg": {
+    "source": [
+      "data/interim/boundaries/lagos_lgas.geojson",
+      "data/processed/sentinel1/lagos_delta_sigma0_db.tif",
+      "data/processed/sentinel1/lagos_pair_positive_mask.tif",
+      "data/processed/sentinel1/lagos_candidate_exploratory_clean.tif"
+    ],
+    "sha256": "e122c309abae31d11249815c7bc552fc6e10d4fb31cc170f0db3d8f227fef8eb",
+    "bytes": 204800,
+    "processing": "LGA geographic-consistency summary, not accuracy"
+  },
+  "docs/validation/lga_change_report.json": {
+    "source": [
+      "data/interim/boundaries/lagos_lgas.geojson",
+      "data/processed/sentinel1/lagos_delta_sigma0_db.tif",
+      "data/processed/sentinel1/lagos_pair_positive_mask.tif",
+      "data/processed/sentinel1/lagos_candidate_exploratory_clean.tif"
+    ],
+    "sha256": "ce947fdd5076395504f59246c98b142c4779ca509b659a70495e3ee25467eaf3",
+    "bytes": 4142,
+    "processing": "LGA geographic-consistency summary, not accuracy"
+  },
+  "data/raw/validation/modis/MCDWD_L3.A2024184.h18v08.061.2025277150034.hdf": {
+    "source": "https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/61/MCDWD_L3/2024/184/MCDWD_L3.A2024184.h18v08.061.2025277150034.hdf",
+    "bytes": 11892495,
+    "sha256": "170293a0f0a85ecbda938cb1755b3f46bbdb3b576e24c3ff705a94fcdc0e1f4d"
+  },
+  "data/processed/validation/modis/20240702_FloodCS_1Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024184.h18v08.061.2025277150034.hdf",
+    "subdataset": "FloodCS_1Day_250m",
+    "bytes": 5908,
+    "sha256": "0e73364c81bb8c79d61443b61509068169dbfb21d6599bf714b83bc5e4d64caf"
+  },
+  "data/processed/validation/modis/20240702_Flood_1Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024184.h18v08.061.2025277150034.hdf",
+    "subdataset": "Flood_1Day_250m",
+    "bytes": 5897,
+    "sha256": "ad27d54237a43db1827e9e49ad216c9a526481ed3cc6f1fb3c01c4f8e6e913b9"
+  },
+  "data/processed/validation/modis/20240702_Flood_2Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024184.h18v08.061.2025277150034.hdf",
+    "subdataset": "Flood_2Day_250m",
+    "bytes": 5724,
+    "sha256": "19030839c8d633436c0565717310262e9b6c4ec2b677594cf6440526870a6901"
+  },
+  "data/processed/validation/modis/20240702_Flood_3Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024184.h18v08.061.2025277150034.hdf",
+    "subdataset": "Flood_3Day_250m",
+    "bytes": 6208,
+    "sha256": "3159f69a36383327f054a47dff9464220c61e7af6adbe2baea66bea7369aa9e6"
+  },
+  "data/processed/validation/modis/20240702_TotalCounts_1Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024184.h18v08.061.2025277150034.hdf",
+    "subdataset": "TotalCounts_1Day_250m",
+    "bytes": 10223,
+    "sha256": "b5ab05904bddf5bfc289c150467d6ed53363ca068fd9d894e01d4aa22627a1de"
+  },
+  "data/processed/validation/modis/20240702_TotalCounts_2Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024184.h18v08.061.2025277150034.hdf",
+    "subdataset": "TotalCounts_2Day_250m",
+    "bytes": 10921,
+    "sha256": "d17a1953266e3444371f250a338b1cbcb3630e2eabf5eaf7bfbb2203163857c5"
+  },
+  "data/processed/validation/modis/20240702_TotalCounts_3Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024184.h18v08.061.2025277150034.hdf",
+    "subdataset": "TotalCounts_3Day_250m",
+    "bytes": 11269,
+    "sha256": "4f802cca4e93544af42fb829ccfe36dad879a87d08dddbc1d13e0edfee740c9f"
+  },
+  "data/processed/validation/modis/20240702_ValidCountsCS_1Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024184.h18v08.061.2025277150034.hdf",
+    "subdataset": "ValidCountsCS_1Day_250m",
+    "bytes": 5431,
+    "sha256": "6f3cf3277ac693e5244fe5970453b85c49d992198fd9570c4765cb18d1f4d9f8"
+  },
+  "data/processed/validation/modis/20240702_ValidCounts_1Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024184.h18v08.061.2025277150034.hdf",
+    "subdataset": "ValidCounts_1Day_250m",
+    "bytes": 5432,
+    "sha256": "204846136889cd4259cc80ca02681e081d2d4ee29e7b10f000e6a31e5cb2a515"
+  },
+  "data/processed/validation/modis/20240702_ValidCounts_2Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024184.h18v08.061.2025277150034.hdf",
+    "subdataset": "ValidCounts_2Day_250m",
+    "bytes": 7777,
+    "sha256": "59a8e3f8e5e5ed0432f7f48747d7c41e74e00f52c1ab1ed9736ffda34936637a"
+  },
+  "data/processed/validation/modis/20240702_ValidCounts_3Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024184.h18v08.061.2025277150034.hdf",
+    "subdataset": "ValidCounts_3Day_250m",
+    "bytes": 12994,
+    "sha256": "6bfdcfbd8c36d0f0661d5ad4ab538134cd06b3b778433b5ab9377affdffe42cf"
+  },
+  "data/processed/validation/modis/20240702_WaterCountsCS_1Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024184.h18v08.061.2025277150034.hdf",
+    "subdataset": "WaterCountsCS_1Day_250m",
+    "bytes": 5493,
+    "sha256": "b81acd1fb1cf5834c502b8a3dce1c3f172c1532e0ebfb9bfbe9fa827933ca7c8"
+  },
+  "data/processed/validation/modis/20240702_WaterCounts_1Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024184.h18v08.061.2025277150034.hdf",
+    "subdataset": "WaterCounts_1Day_250m",
+    "bytes": 5463,
+    "sha256": "4c746c2ff70132efc8f2c052c05eab813c6fe65535c2872c28a9ab2e2dbcb71b"
+  },
+  "data/processed/validation/modis/20240702_WaterCounts_2Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024184.h18v08.061.2025277150034.hdf",
+    "subdataset": "WaterCounts_2Day_250m",
+    "bytes": 6803,
+    "sha256": "98c1e56b052575cf4be9aacdbab477a1f5088a2c77b78e0d321c79cde29dba9a"
+  },
+  "data/processed/validation/modis/20240702_WaterCounts_3Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024184.h18v08.061.2025277150034.hdf",
+    "subdataset": "WaterCounts_3Day_250m",
+    "bytes": 10349,
+    "sha256": "5e47b88a9e80a9feef2ba43c58bb1721cd792fe894ec32fd9c0d53a78c99c029"
+  },
+  "data/raw/validation/modis/MCDWD_L3.A2024185.h18v08.061.2025277150043.hdf": {
+    "source": "https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/61/MCDWD_L3/2024/185/MCDWD_L3.A2024185.h18v08.061.2025277150043.hdf",
+    "bytes": 7509801,
+    "sha256": "a8dbbbf5ced9600cecfedd5b77aee280c8803286a06275845df3de69272ad7ef"
+  },
+  "data/processed/validation/modis/20240703_FloodCS_1Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024185.h18v08.061.2025277150043.hdf",
+    "subdataset": "FloodCS_1Day_250m",
+    "bytes": 5234,
+    "sha256": "63e8fb686021fe1d4a002ffdbe3ad8bec42fc8f92b68281edd79c659f31e7f0a"
+  },
+  "data/processed/validation/modis/20240703_Flood_1Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024185.h18v08.061.2025277150043.hdf",
+    "subdataset": "Flood_1Day_250m",
+    "bytes": 5206,
+    "sha256": "583a5203698196a091422b79c636d8c7580f59580a7cfdcef83dff946522f3c6"
+  },
+  "data/processed/validation/modis/20240703_Flood_2Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024185.h18v08.061.2025277150043.hdf",
+    "subdataset": "Flood_2Day_250m",
+    "bytes": 5206,
+    "sha256": "42cbe92e9b7539f67002736bc74b754f3fb03185f526ef5c1fe23ea397fbd803"
+  },
+  "data/processed/validation/modis/20240703_Flood_3Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024185.h18v08.061.2025277150043.hdf",
+    "subdataset": "Flood_3Day_250m",
+    "bytes": 5206,
+    "sha256": "7bab4b546fde1f9fe6a387f3f8458dee5d198473969e9774e1a81c2042f3645b"
+  },
+  "data/processed/validation/modis/20240703_TotalCounts_1Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024185.h18v08.061.2025277150043.hdf",
+    "subdataset": "TotalCounts_1Day_250m",
+    "bytes": 5155,
+    "sha256": "a2cbeac36e0c40120ffe091a6d8504b9969391a18b495dc83b36b86589aece5e"
+  },
+  "data/processed/validation/modis/20240703_TotalCounts_2Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024185.h18v08.061.2025277150043.hdf",
+    "subdataset": "TotalCounts_2Day_250m",
+    "bytes": 10285,
+    "sha256": "96b3cf717f227d26e283c9d1246785649f1a6f134b5f34d17687441e564f3e27"
+  },
+  "data/processed/validation/modis/20240703_TotalCounts_3Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024185.h18v08.061.2025277150043.hdf",
+    "subdataset": "TotalCounts_3Day_250m",
+    "bytes": 10989,
+    "sha256": "5a0a206480aea4599c587cb9cdd1e4dd1363ac0fb17e2305e824eea0cb6624c2"
+  },
+  "data/processed/validation/modis/20240703_ValidCountsCS_1Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024185.h18v08.061.2025277150043.hdf",
+    "subdataset": "ValidCountsCS_1Day_250m",
+    "bytes": 5079,
+    "sha256": "bdf59fe7d5e7d97ae5b248905967a0ec3b41bf24e8fdfde17bf561f492aacab1"
+  },
+  "data/processed/validation/modis/20240703_ValidCounts_1Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024185.h18v08.061.2025277150043.hdf",
+    "subdataset": "ValidCounts_1Day_250m",
+    "bytes": 5051,
+    "sha256": "b5a0207209f37c456a729dd59d28570a2c12051adeeb95b178d847b109212c0a"
+  },
+  "data/processed/validation/modis/20240703_ValidCounts_2Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024185.h18v08.061.2025277150043.hdf",
+    "subdataset": "ValidCounts_2Day_250m",
+    "bytes": 5432,
+    "sha256": "ca555c13e1ba403f28dd81d7a1bf09406781ccc8552b3c720cd31a0b7f1f59a2"
+  },
+  "data/processed/validation/modis/20240703_ValidCounts_3Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024185.h18v08.061.2025277150043.hdf",
+    "subdataset": "ValidCounts_3Day_250m",
+    "bytes": 7777,
+    "sha256": "59f2018b8626685ea11c96fa8deb7f6975020750855631af98288795032d320e"
+  },
+  "data/processed/validation/modis/20240703_WaterCountsCS_1Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024185.h18v08.061.2025277150043.hdf",
+    "subdataset": "WaterCountsCS_1Day_250m",
+    "bytes": 5081,
+    "sha256": "aa742c8ceaef78d6375b411b27dad0b5f75825d06bbe6c48ba9cfb6be6979eaa"
+  },
+  "data/processed/validation/modis/20240703_WaterCounts_1Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024185.h18v08.061.2025277150043.hdf",
+    "subdataset": "WaterCounts_1Day_250m",
+    "bytes": 5053,
+    "sha256": "083fbe507cbc53d8cb6a684028bc5357642875cc3cfb91ed6bf01232db87943f"
+  },
+  "data/processed/validation/modis/20240703_WaterCounts_2Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024185.h18v08.061.2025277150043.hdf",
+    "subdataset": "WaterCounts_2Day_250m",
+    "bytes": 5449,
+    "sha256": "ca41668ca316263ba94647b11ad746039dcb3848af84a2a809aa705a965cfcd0"
+  },
+  "data/processed/validation/modis/20240703_WaterCounts_3Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024185.h18v08.061.2025277150043.hdf",
+    "subdataset": "WaterCounts_3Day_250m",
+    "bytes": 6803,
+    "sha256": "59332eb4fcbebbbb90c236fc78b47c4287978a2476278df9677dd03e31179342"
+  },
+  "data/raw/validation/modis/MCDWD_L3.A2024186.h18v08.061.2025277150051.hdf": {
+    "source": "https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/61/MCDWD_L3/2024/186/MCDWD_L3.A2024186.h18v08.061.2025277150051.hdf",
+    "bytes": 8963374,
+    "sha256": "de3de8ea52fd77419d534170565e36c6f85ee9e9d3ff4d0aee7afd897215e881"
+  },
+  "data/processed/validation/modis/20240704_FloodCS_1Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024186.h18v08.061.2025277150051.hdf",
+    "subdataset": "FloodCS_1Day_250m",
+    "bytes": 6789,
+    "sha256": "30a8c5ace6a28d28013377aaa254f9a23b2e9f1b93dc06457eb958fe48ee4a39"
+  },
+  "data/processed/validation/modis/20240704_Flood_1Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024186.h18v08.061.2025277150051.hdf",
+    "subdataset": "Flood_1Day_250m",
+    "bytes": 6815,
+    "sha256": "c45b43c9f86cd3626b019bf81749e6b0479a677ad51516e9ca6eba3ce74587b6"
+  },
+  "data/processed/validation/modis/20240704_Flood_2Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024186.h18v08.061.2025277150051.hdf",
+    "subdataset": "Flood_2Day_250m",
+    "bytes": 5204,
+    "sha256": "3a6d7eb12d761038e79c6f8aa408513f13ab4351a542e2809560ddd20afe3fd6"
+  },
+  "data/processed/validation/modis/20240704_Flood_3Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024186.h18v08.061.2025277150051.hdf",
+    "subdataset": "Flood_3Day_250m",
+    "bytes": 5204,
+    "sha256": "86a6db3d7846963d35781e3b63e977728529325cc4d8d530c324e0cb6275c030"
+  },
+  "data/processed/validation/modis/20240704_TotalCounts_1Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024186.h18v08.061.2025277150051.hdf",
+    "subdataset": "TotalCounts_1Day_250m",
+    "bytes": 5301,
+    "sha256": "12451a4a0e24de20f70c6ed57b95f0d77d3a279ef8d412881eb67602467bfd34"
+  },
+  "data/processed/validation/modis/20240704_TotalCounts_2Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024186.h18v08.061.2025277150051.hdf",
+    "subdataset": "TotalCounts_2Day_250m",
+    "bytes": 5386,
+    "sha256": "698797fd742454f822e2e36ce0986a4bc2ecf1210c7b3e281c233b8686bbdd07"
+  },
+  "data/processed/validation/modis/20240704_TotalCounts_3Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024186.h18v08.061.2025277150051.hdf",
+    "subdataset": "TotalCounts_3Day_250m",
+    "bytes": 10426,
+    "sha256": "e180ab8e0d5529c14ef151a669ad9f3fc8a0774bf9e0e88b33701095d07b078b"
+  },
+  "data/processed/validation/modis/20240704_ValidCountsCS_1Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024186.h18v08.061.2025277150051.hdf",
+    "subdataset": "ValidCountsCS_1Day_250m",
+    "bytes": 5972,
+    "sha256": "0c0292efbe160be9519518d2a251cf97e55e697169320154f17c2a8a470b20bc"
+  },
+  "data/processed/validation/modis/20240704_ValidCounts_1Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024186.h18v08.061.2025277150051.hdf",
+    "subdataset": "ValidCounts_1Day_250m",
+    "bytes": 5922,
+    "sha256": "71b52f4eb36a822d614985a8d777e3c5b27f8576a92b18bfd458731597101e19"
+  },
+  "data/processed/validation/modis/20240704_ValidCounts_2Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024186.h18v08.061.2025277150051.hdf",
+    "subdataset": "ValidCounts_2Day_250m",
+    "bytes": 5922,
+    "sha256": "89ad9523425a12a8a8bd35a10117368ad4e448bc2b952be1d0c1122b27a8c4d8"
+  },
+  "data/processed/validation/modis/20240704_ValidCounts_3Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024186.h18v08.061.2025277150051.hdf",
+    "subdataset": "ValidCounts_3Day_250m",
+    "bytes": 6204,
+    "sha256": "c2d42849fc0d40a6cf5fcf8994abf914c0d3e21411623a0d2a845bb6452dbd8e"
+  },
+  "data/processed/validation/modis/20240704_WaterCountsCS_1Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024186.h18v08.061.2025277150051.hdf",
+    "subdataset": "WaterCountsCS_1Day_250m",
+    "bytes": 5915,
+    "sha256": "4cf5e31422911daf0d06621a15d85caf12dc462da8dbf837562d44a921410049"
+  },
+  "data/processed/validation/modis/20240704_WaterCounts_1Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024186.h18v08.061.2025277150051.hdf",
+    "subdataset": "WaterCounts_1Day_250m",
+    "bytes": 5937,
+    "sha256": "5a49178f8a24e58f334c04344eca76208489a3e9bd31561eb8a9f2ccb77f3dbc"
+  },
+  "data/processed/validation/modis/20240704_WaterCounts_2Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024186.h18v08.061.2025277150051.hdf",
+    "subdataset": "WaterCounts_2Day_250m",
+    "bytes": 5923,
+    "sha256": "9dce7d79f75a53ecb685657a4e6ca9cbd267567ab62a243b7e233ca001cdeb03"
+  },
+  "data/processed/validation/modis/20240704_WaterCounts_3Day_250m.tif": {
+    "source": "data/raw/validation/modis/MCDWD_L3.A2024186.h18v08.061.2025277150051.hdf",
+    "subdataset": "WaterCounts_3Day_250m",
+    "bytes": 6218,
+    "sha256": "c0db02b19ae36169a4a111a73c0f9f2643dda4f731c0c3eae1a2549f15a67bfa"
+  },
+  "docs/validation/modis_quality_report.json": {
+    "source": "src/check_modis_quality.py",
+    "bytes": 63411,
+    "sha256": "5ac7b3dd83f06e008eaedbf3cf707b199edc92f27b612b2c831c9cfcf797b0fc"
   }
 }

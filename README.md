@@ -147,3 +147,5 @@ Phase 2 review outputs now include DSM slope sensitivity and 400 candidate polyg
 ## Phase 3 validation preparation
 
 The provisional Phase 2 baseline is preserved with a checksum snapshot and review register. See [Phase 3 validation](docs/phase3_validation.md) for the evidence protocol. C0079 and C0373 remain unresolved diagnostic cases; no accuracy assessment or confirmed flood extent is available.
+
+Phase 3 evidence screening includes nine public-source leads, location diagnostics, LGA change summaries and a public reference archive review. No independent acquisition-matched reference has been established; quantitative accuracy validation remains incomplete. NASA MODIS files for July 2-4 were verified and audited: July 3 has insufficient data at every sampled Lagos pixel in all flood layers. These products cannot supply quantitative validation; see Phase 3 for coverage statistics and limitations.

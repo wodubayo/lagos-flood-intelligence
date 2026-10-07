@@ -1,0 +1,106 @@
+{
+  "scope": "Arbitrary source-linked search circles, not independently labelled flood locations",
+  "counts": [
+    {
+      "radius_m": 100,
+      "all_pixels": 314,
+      "eligible": 314,
+      "june_brighter": 314,
+      "then_july_dark": 0,
+      "then_drop_ge3": 0,
+      "after_cleanup": 0,
+      "removed_by_cleanup": 0,
+      "individual_conditions": {
+        "june_brighter": 314,
+        "july_dark": 0,
+        "drop_ge3": 0
+      },
+      "june_vh_db": {
+        "p05": -16.999229907989502,
+        "median": -13.069298267364502,
+        "p95": -8.34944190979005
+      },
+      "july_vh_db": {
+        "p05": -15.437070417404176,
+        "median": -12.435877799987793,
+        "p95": -8.801196908950807
+      },
+      "delta_vh_db": {
+        "p05": -1.9459768295288087,
+        "median": 0.4676229953765869,
+        "p95": 4.151799011230468
+      }
+    },
+    {
+      "radius_m": 250,
+      "all_pixels": 1959,
+      "eligible": 1959,
+      "june_brighter": 1959,
+      "then_july_dark": 0,
+      "then_drop_ge3": 0,
+      "after_cleanup": 0,
+      "removed_by_cleanup": 0,
+      "individual_conditions": {
+        "june_brighter": 1959,
+        "july_dark": 0,
+        "drop_ge3": 35
+      },
+      "june_vh_db": {
+        "p05": -16.45814208984375,
+        "median": -13.073929786682129,
+        "p95": -8.62215518951416
+      },
+      "july_vh_db": {
+        "p05": -15.618714904785156,
+        "median": -12.423126220703125,
+        "p95": -8.52244110107422
+      },
+      "delta_vh_db": {
+        "p05": -2.300141143798828,
+        "median": 0.45844459533691406,
+        "p95": 3.5518209457397454
+      }
+    },
+    {
+      "radius_m": 500,
+      "all_pixels": 7841,
+      "eligible": 7841,
+      "june_brighter": 7836,
+      "then_july_dark": 13,
+      "then_drop_ge3": 2,
+      "after_cleanup": 0,
+      "removed_by_cleanup": 2,
+      "individual_conditions": {
+        "june_brighter": 7836,
+        "july_dark": 14,
+        "drop_ge3": 140
+      },
+      "june_vh_db": {
+        "p05": -17.16763687133789,
+        "median": -13.030095100402832,
+        "p95": -8.321009635925293
+      },
+      "july_vh_db": {
+        "p05": -16.457321166992188,
+        "median": -12.581581115722656,
+        "p95": -8.256338119506836
+      },
+      "delta_vh_db": {
+        "p05": -2.270627975463867,
+        "median": 0.3184642791748047,
+        "p95": 3.459379196166992
+      }
+    }
+  ],
+  "checks": [
+    "Four input hashes matched",
+    "Grids matched",
+    "Reconstructed rule exactly matches raw candidates in every window",
+    "Clean is subset of raw"
+  ],
+  "limitations": [
+    "Sequential attrition depends on test order; individual condition counts also provided",
+    "No recording time or flooded road geometry established",
+    "This is diagnostic development evidence, not held-out accuracy assessment"
+  ]
+}

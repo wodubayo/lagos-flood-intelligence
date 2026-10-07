@@ -1,0 +1,43 @@
+{
+  "landmark_longitude": 3.3962023,
+  "landmark_latitude": 6.5550189,
+  "coordinate_source": "Place coordinates in Google Maps URL linked by AFP; direct Maps retrieval failed",
+  "status": "search aid only, not validated coordinates of flooded pixels",
+  "radii_are": "arbitrary review windows, not measured spatial uncertainty or flood boundaries",
+  "baseline_hashes_verified": 8,
+  "counts": [
+    {
+      "radius_m": 100,
+      "pixels": 314,
+      "positive_sar_pixels": 314,
+      "eligible_pixels": 314,
+      "candidate_pixels": 0,
+      "eligible_not_selected_pixels": 314,
+      "excluded_pixels": 0
+    },
+    {
+      "radius_m": 250,
+      "pixels": 1959,
+      "positive_sar_pixels": 1959,
+      "eligible_pixels": 1959,
+      "candidate_pixels": 0,
+      "eligible_not_selected_pixels": 1959,
+      "excluded_pixels": 0
+    },
+    {
+      "radius_m": 500,
+      "pixels": 7841,
+      "positive_sar_pixels": 7841,
+      "eligible_pixels": 7841,
+      "candidate_pixels": 0,
+      "eligible_not_selected_pixels": 7841,
+      "excluded_pixels": 0
+    }
+  ],
+  "limitations": [
+    "Exact footage recording time unresolved",
+    "No reference labels or accuracy metrics",
+    "Counts depend on arbitrary buffer radius",
+    "No candidate pixels is not proof of no flooding"
+  ]
+}
