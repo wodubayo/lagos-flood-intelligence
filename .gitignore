@@ -53,5 +53,8 @@ data/processed/
 # Keep small acquisition inventories under version control
 !docs/acquisition/*.csv
 !docs/acquisition/*.geojson
+!docs/validation/candidate_review_register.csv
+!docs/validation/evidence_leads.csv
+!docs/validation/reference_observations.csv
 *.part
 *.part.tif

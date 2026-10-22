@@ -27,3 +27,9 @@ The July 7 retrospective strengthens the case for investigating Satellite Town a
 Before selecting a final rule or claiming detection accuracy, obtain dated observations with usable coordinates or mapped extents and a timing relationship to the overpass. Record location precision, observation time/timezone, original source and uncertainty. Include independently established dry as well as flooded locations, with evaluation samples kept separate from threshold tuning.
 
 Until then, retain the label **exploratory backscatter-change candidates**. Terrain and radar consistency are diagnostic information, not independent flood validation.
+
+## Additional White Sand / Oke Imoye report (2026-10-21)
+
+The July 4 [BusinessDay print report, page 35](https://cdn.businessday.ng/wp-content/uploads/2024/07/BD_20240704.pdf) also describes July 3 flooding at White Sand Estate in Isheri-Oshun. A resident says she prepared her child for school at about 7:30 a.m. and could not proceed because flooding at the Oke Imoye end of the road toward Fagbile Estate made it impassable to vehicles. The named street is independently present in local address listings, but those listings do not locate the flooded segment.
+
+This is useful event context for Alimosho, but it is not an acquisition-time reference: 7:30 a.m. describes school preparation, not a precisely timed road observation, and is roughly one hour after the 06:30:17 WAT Sentinel-1 overpass. The article provides no coordinates or mapped inundation boundary. Its Ago Palace Way and Oke Imoye accounts are two locations in one article, so they share source dependence. The lead is registered as L010 and the contextual observation as OBS_WHITESAND_001; neither is eligible for pixel accuracy scoring or candidate training labels.

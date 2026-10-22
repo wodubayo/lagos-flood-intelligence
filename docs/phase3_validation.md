@@ -56,7 +56,7 @@ Phase 3 evidence collection is now underway. The baseline's eight registered art
 
 ### Source leads and duplication
 
-The [evidence lead register](validation/evidence_leads.csv) contains six leads, covering Iyana Oworo, an airport approach road and Trade Fair. Leads are not accepted reference observations. At this first pass the reference-observation CSV was empty; the subsequent user-frame review below adds contextual evidence only.
+At that first pass, the [evidence lead register](validation/evidence_leads.csv) contained six leads covering Iyana Oworo, an airport approach road and Trade Fair. Leads are not accepted reference observations. The reference-observation CSV was empty then; the subsequent user-frame review added contextual evidence only.
 
 [AFP's July 23 fact-check](https://factcheck.afp.com/doc.afp.com.364R47J) traces a miscaptioned flood clip to Galaxy TV and reports matching the Iyana Oworo footbridge. This supplies a stronger location trail, but not a capture time. The linked [Galaxy TV video](https://www.youtube.com/watch?v=a7lOCyItoMM) could not be fetched by the browsing tool; it has not been independently viewed in this work.
 
@@ -342,3 +342,12 @@ The archive search and MODIS feasibility check are complete. Independent quantit
 Detailed metadata, class/count histograms, native CRS, input/output hashes and limitations are in [modis_quality_report.json](validation/modis_quality_report.json). The earlier archive check is retained as a historical record of the pre-download state.
 
 Reproduce with the project Python environment and src/check_modis_quality.py; --gdal-bin can specify another HDF4-enabled GDAL installation. Existing outputs are protected against overwrite.
+
+
+## Phase 3 evidence follow-up - 2026-10-21
+
+A new contemporaneous source was found in the July 4 BusinessDay print edition. Its July 3 Lagos flood report places household impacts at White Sand Estate, Isheri-Oshun, Alimosho, and quotes a resident who says she prepared her child for school at about 7:30 a.m. and then could not pass the flooded Oke Imoye end of the route to Fagbile Estate. The report supports a morning road-impassability observation in a named corridor. It does not give a coordinate, mapped flood boundary, exact time at which the road was encountered, or condition at the 06:30:17 WAT Sentinel-1 overpass. The street name also appears in local address sources for Isheri-Oshun, but those listings do not geolocate the reported flooded segment. See the [BusinessDay report, page 35](https://cdn.businessday.ng/wp-content/uploads/2024/07/BD_20240704.pdf) and corroborating address references [ATOPCON Lagos](https://atopconlagos.org/location/5-oke-imoye-street-oke-imoye-bus-stop-isheri-oshun-alimosho-l-g-a-lagos-state/) and [Jide Taiwo & Co.](https://jidetaiwoandco.com/crmportal/properties/index/page%3A2/type%3A/contract%3A/location%3A/keyword%3ALagos/start_price%3A/end_price%3A/bedroom%3A/bathroom%3A/uniq_id%3A/sort%3Alocation_id/direction%3Aasc).
+
+The location and timing are recorded as contextual evidence in [the lead register](validation/evidence_leads.csv) and [reference-observation register](validation/reference_observations.csv). It is not assigned to a candidate polygon or raster pixel because the street segment cannot yet be georeferenced from the public source. The approximate 7:30 a.m. school-preparation time is about an hour after the SAR overpass, and the source does not establish how long the road remained impassable or whether it was flooded at overpass time. The July 4 report shares its article/source family with the already registered Ago Palace Way lead; these are distinct named locations from a single article, not independent reports.
+
+The lead improves event and time context for the western Alimosho review, but quantitative validation remains unavailable. MODIS July 3 remains unusable over Lagos because every sampled AOI pixel is marked insufficient data. No independent dry reference observations have been found. Keep all candidate labels unknown, do not calculate accuracy metrics, and do not use these contextual observations as GeoAI training labels. Phase 3's defensible outcome remains: validation incomplete, with a better documented evidence limitation.
