@@ -1,0 +1,58 @@
+{
+  "checked_utc": "2026-10-15T17:28:36.436116+00:00",
+  "stage": "Terrain correction",
+  "date": "20240703",
+  "comparison": "manual SNAP DIMAP vs graph SNAP DIMAP directly",
+  "diagnostic_only": true,
+  "absolute_difference_threshold_counts": {},
+  "bands": {
+    "Sigma0_VH": {
+      "grid_equal_semantically": true,
+      "shape": [
+        24519,
+        28674
+      ],
+      "pixels": 703057806,
+      "exact_different_pixels": 0,
+      "zero_mask_differences": 0,
+      "outside_tolerance_pixels": 0,
+      "max_absolute_difference": 0.0,
+      "max_difference_pixel_row_col": null,
+      "max_difference_pixel_center_xy": null,
+      "max_difference_values_manual_graph": null,
+      "threshold_counts": {
+        "0.0001": 0,
+        "0.001": 0,
+        "0.01": 0,
+        "0.1": 0,
+        "1.0": 0
+      },
+      "finite_pairs": 703057806,
+      "mean_absolute_difference": 0.0
+    },
+    "Sigma0_VV": {
+      "grid_equal_semantically": true,
+      "shape": [
+        24519,
+        28674
+      ],
+      "pixels": 703057806,
+      "exact_different_pixels": 0,
+      "zero_mask_differences": 0,
+      "outside_tolerance_pixels": 0,
+      "max_absolute_difference": 0.0,
+      "max_difference_pixel_row_col": null,
+      "max_difference_pixel_center_xy": null,
+      "max_difference_values_manual_graph": null,
+      "threshold_counts": {
+        "0.0001": 0,
+        "0.001": 0,
+        "0.01": 0,
+        "0.1": 0,
+        "1.0": 0
+      },
+      "finite_pairs": 703057806,
+      "mean_absolute_difference": 0.0
+    }
+  }
+}

@@ -1,0 +1,47 @@
+﻿{
+    "checked_utc":  "2026-10-15",
+    "date":  "20240703",
+    "stage":  "Terrain correction source metadata probe",
+    "diagnostic_only":  true,
+    "source_products":  {
+                            "manual":  "data/interim/sentinel1/S1A_20240703_Orb_TNR_Cal_Spk.dim",
+                            "graph_orbit_checkpoint":  "outputs/snap_runs/graph_trial_02_stages/S1A_20240703_Orb.dim",
+                            "graph":  "outputs/snap_runs/graph_trial_02_stages/S1A_20240703_Orb_TNR_Cal_Spk.dim"
+                        },
+    "intermediate_data_files":  "All 15 band, tie-point-grid, header and vector CSV files are byte-identical by SHA-256.",
+    "orbit_metadata":  {
+                           "graph_after_thermal_noise_removal":  {
+                                                                     "first_vector_time":  "03-JUL-2024 05:29:09.460630",
+                                                                     "last_vector_time":  "03-JUL-2024 05:31:49.460630",
+                                                                     "orbit_state_vector_file":  "-",
+                                                                     "vector_count":  17
+                                                                 },
+                           "graph_after_orbit_file":  {
+                                                          "first_vector_time":  "03-JUL-2024 05:30:07.566088",
+                                                          "last_vector_time":  "03-JUL-2024 05:30:55.566088",
+                                                          "orbit_state_vector_file":  "Sentinel Precise S1A_OPER_AUX_POEORB_OPOD_20240723T070843_V20240702T225942_20240704T005942.EOF.zip",
+                                                          "vector_count":  49
+                                                      },
+                           "manual_after_thermal_noise_removal":  {
+                                                                      "first_vector_time":  "03-JUL-2024 05:30:07.566088",
+                                                                      "last_vector_time":  "03-JUL-2024 05:30:55.566088",
+                                                                      "orbit_state_vector_file":  "Sentinel Precise S1A_OPER_AUX_POEORB_OPOD_20240723T070843_V20240702T225942_20240704T005942.EOF.zip",
+                                                                      "vector_count":  49
+                                                                  }
+                       },
+    "tests":  [
+                  {
+                      "method":  "Copied only orbit_state_vector_file and Orbit_State_Vectors from the graph Apply-Orbit-File checkpoint; reused the unchanged graph Spk .data directory.",
+                      "result":  "Manual and probe TC outputs are exactly equal for both bands: 703,057,806 pixels per band; zero differing pixels.",
+                      "name":  "restore orbit metadata in a diagnostic copy of graph Spk DIM",
+                      "report":  "outputs/snap_runs/graph_trial_04_orbit_metadata_probe/manual_comparison.json"
+                  },
+                  {
+                      "method":  "Ran Apply-Orbit-File immediately before TC using the saved graph Spk product.",
+                      "result":  "It retained orbit_state_vector_file=- and the 17 stale vectors; its TC discrepancy is identical to the uncorrected graph baseline.",
+                      "name":  "reapply Apply-Orbit-File to processed graph Spk product",
+                      "report":  "outputs/snap_runs/graph_trial_04_orbit_metadata_probe/reapply_comparison.json"
+                  }
+              ],
+    "conclusion":  "The graph Apply-Orbit-File output contains the precise vectors, but ThermalNoiseRemoval resets the downstream product source metadata to original vectors. Restoring the precise orbit metadata alone before TC makes the result bit-identical to manual TC, strongly identifying the metadata reset as the cause. Reapplying Apply-Orbit-File to the processed product does not restore it. The next pipeline fix must preserve/restore the precise orbit metadata through downstream graph processing, then be validated on both acquisition dates."
+}

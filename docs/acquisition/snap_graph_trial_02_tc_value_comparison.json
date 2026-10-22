@@ -1,0 +1,39 @@
+{
+  "checked_utc": "2026-10-12T03:52:08.150792+00:00",
+  "stage": "Terrain correction",
+  "date": "20240703",
+  "comparison": "manual linear GeoTIFF vs graph DIMAP bands",
+  "diagnostic_only": true,
+  "bands": {
+    "Sigma0_VH": {
+      "grid_equal_semantically": true,
+      "shape": [
+        24519,
+        28674
+      ],
+      "pixels": 703057806,
+      "exact_different_pixels": 165734128,
+      "zero_mask_differences": 71,
+      "nonfinite_mask_differences": 0,
+      "outside_tolerance_pixels": 161147169,
+      "max_absolute_difference": 0.7209854125976562,
+      "finite_pairs": 703057806,
+      "mean_absolute_difference": 5.309591464906322e-06
+    },
+    "Sigma0_VV": {
+      "grid_equal_semantically": true,
+      "shape": [
+        24519,
+        28674
+      ],
+      "pixels": 703057806,
+      "exact_different_pixels": 165733483,
+      "zero_mask_differences": 71,
+      "nonfinite_mask_differences": 0,
+      "outside_tolerance_pixels": 161729374,
+      "max_absolute_difference": 18.278106689453125,
+      "finite_pairs": 703057806,
+      "mean_absolute_difference": 3.3346706140408586e-05
+    }
+  }
+}

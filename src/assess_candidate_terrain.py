@@ -10,6 +10,7 @@ from rasterio.warp import calculate_default_transform, reproject, Resampling
 from shapely.geometry import shape
 from shapely.ops import unary_union
 from prepare_sentinel1_pair import ROOT, save_json, sha256
+from pipeline_config import CONFIG
 
 def horn_slope(z, spacing=30):
     z=np.asarray(z,dtype="float64")
@@ -79,7 +80,7 @@ def main():
     sensitivity={}
     for name,frame in [("raw",pts),("clean",pts[pts.retained_after_cleanup==1])]:
         s=frame.slope_deg.to_numpy()
-        sensitivity[name]={"pixels":len(s),"unknown_slope_pixels":int((~np.isfinite(s)).sum()),"median_slope_deg":float(np.nanmedian(s)),"cutoffs":[dict(max_slope_deg=t,retained_pixels=int((s<=t).sum()),retained_area_km2=float((s<=t).sum())*0.0001) for t in (2,5,10)]}
+        sensitivity[name]={"pixels":len(s),"unknown_slope_pixels":int((~np.isfinite(s)).sum()),"median_slope_deg":float(np.nanmedian(s)),"cutoffs":[dict(max_slope_deg=t,retained_pixels=int((s<=t).sum()),retained_area_km2=float((s<=t).sum())*0.0001) for t in CONFIG["terrain"]["slope_cutoffs_deg"]]}
     selected=pts[pts.retained_after_cleanup==1].copy()
     mapping=components(zip(selected["row"],selected["column"]))
     selected["patch_id"]=[mapping[r,c] for r,c in zip(selected["row"],selected["column"])]

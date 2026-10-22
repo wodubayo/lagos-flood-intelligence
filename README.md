@@ -149,3 +149,15 @@ Phase 2 review outputs now include DSM slope sensitivity and 400 candidate polyg
 The provisional Phase 2 baseline is preserved with a checksum snapshot and review register. See [Phase 3 validation](docs/phase3_validation.md) for the evidence protocol. C0079 and C0373 remain unresolved diagnostic cases; no accuracy assessment or confirmed flood extent is available.
 
 Phase 3 evidence screening includes nine public-source leads, location diagnostics, LGA change summaries and a public reference archive review. No independent acquisition-matched reference has been established; quantitative accuracy validation remains incomplete. NASA MODIS files for July 2-4 were verified and audited: July 3 has insufficient data at every sampled Lagos pixel in all flood layers. These products cannot supply quantitative validation; see Phase 3 for coverage statistics and limitations.
+
+## Phase 4 reproducible pipeline
+
+Phase 4 is complete for the current Lagos event. The pipeline runbook documents the baseline stages, integrity checks and remaining multi-event work. This automates exploratory processing; the Phase 3 validation gate remains unresolved.
+
+The isolated Phase 4 rebuild reproduced all 11 core baseline rasters exactly, with original inputs and outputs unchanged. See the [rebuild report](docs/acquisition/phase4_rebuild_report.json). This verifies computational reproducibility; independent flood validation remains unresolved.
+
+The six-stage pipeline now includes candidate auditing, terrain/polygon diagnostics and LGA summaries. Its isolated rebuild matched all 24 reviewed outputs; see the [diagnostic reproduction report](docs/acquisition/phase4_diagnostics_rebuild_report.json).
+
+Event metadata and supported exploratory parameters are recorded in [config/baseline.json](config/baseline.json). A configuration-driven rebuild reproduced all 24 reviewed outputs; see [Phase 4](docs/phase4_pipeline.md) for supported changes and current event restrictions.
+
+SNAP processing from both raw ZIPs now preserves precise-orbit metadata through terrain correction. June and July match the manual outputs exactly in both VH and VV. An isolated end-to-end rebuild from those SNAP products reproduced all 24 reviewed analytical outputs; see the [SNAP run report](outputs/snap_runs/graph_trial_05_orbit_metadata_fix/run_report.json) and [end-to-end rebuild report](outputs/runs/phase4_snap_end_to_end_02/rebuild_report.json). This verifies computational reproducibility, not flood accuracy; independent Phase 3 validation remains unresolved.

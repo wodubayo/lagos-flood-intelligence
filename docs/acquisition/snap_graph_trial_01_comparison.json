@@ -1,0 +1,115 @@
+{
+  "checked_utc": "2026-10-12T02:40:22.910177+00:00",
+  "scope": "Full scene, manual linear GeoTIFF vs graph DIMAP ENVI bands; no resampling",
+  "tolerance_diagnostic": {
+    "rtol": 1e-05,
+    "atol": 1e-07
+  },
+  "note": "Tolerance is a numerical diagnostic, not independent flood validation or automatic acceptance.",
+  "dates": {
+    "20240621": {
+      "manual": "data/interim/sentinel1/S1A_20240621_TC_linear.tif",
+      "graph_dim": "outputs/snap_runs/graph_trial_01/S1A_20240621_Orb_TNR_Cal_Spk_TC.dim",
+      "metadata_sha256": {
+        "manual_dim": "5407b9150acbf4128449eb4464c5ed2b9c21fba15c53505eab9850365bfcde35",
+        "graph_dim": "86fa4aff1e27e28001a0f90f2401edf71b6a5f922207b9281fb76b225d87cf9c"
+      },
+      "bands": {
+        "Sigma0_VH": {
+          "total_pixels": 702943110,
+          "exact_different_pixels": 165493199,
+          "zero_mask_differences": 49,
+          "nonfinite_mask_differences": 0,
+          "outside_tolerance_pixels": 159834786,
+          "max_absolute_difference": 0.7767143249511719,
+          "finite_pairs": 702943110,
+          "mean_absolute_difference": 4.307627245803836e-06
+        },
+        "Sigma0_VV": {
+          "total_pixels": 702943110,
+          "exact_different_pixels": 165491899,
+          "zero_mask_differences": 49,
+          "nonfinite_mask_differences": 0,
+          "outside_tolerance_pixels": 160546902,
+          "max_absolute_difference": 19.399200439453125,
+          "finite_pairs": 702943110,
+          "mean_absolute_difference": 2.5013590709193487e-05
+        }
+      },
+      "grid_equal_at_1e_minus8_map_units": true
+    },
+    "20240703": {
+      "manual": "data/interim/sentinel1/S1A_20240703_TC_linear.tif",
+      "graph_dim": "outputs/snap_runs/graph_trial_01/S1A_20240703_Orb_TNR_Cal_Spk_TC.dim",
+      "metadata_sha256": {
+        "manual_dim": "14eebeae1bf844be722903729d0de8b8cd3e661e094774a59891c4d800848982",
+        "graph_dim": "b473593c328014191e6d4c439f1d8e85a2fa033d2ce72458257fb0224b238574"
+      },
+      "bands": {
+        "Sigma0_VH": {
+          "total_pixels": 703057806,
+          "exact_different_pixels": 165734128,
+          "zero_mask_differences": 71,
+          "nonfinite_mask_differences": 0,
+          "outside_tolerance_pixels": 161147169,
+          "max_absolute_difference": 0.7209854125976562,
+          "finite_pairs": 703057806,
+          "mean_absolute_difference": 5.309591464906322e-06
+        },
+        "Sigma0_VV": {
+          "total_pixels": 703057806,
+          "exact_different_pixels": 165733483,
+          "zero_mask_differences": 71,
+          "nonfinite_mask_differences": 0,
+          "outside_tolerance_pixels": 161729374,
+          "max_absolute_difference": 18.278106689453125,
+          "finite_pairs": 703057806,
+          "mean_absolute_difference": 3.3346706140408586e-05
+        }
+      },
+      "grid_equal_at_1e_minus8_map_units": true
+    }
+  },
+  "provenance_warning": {
+    "summary": "The user clarified that the saved XML is authoritative: the calibration UI displayed both VH and VV, and the mapProjection element specifies UTM Zone 31 / WGS84. Earlier interpretation of cropped screenshots was incorrect.",
+    "screenshots_show": {
+      "terrain_correction_map_projection": "WGS84(DD)",
+      "calibration_polarisation_visible": "VH only (VV not shown selected in screenshot)",
+      "terrain_correction_source_bands": [
+        "Sigma0_VH",
+        "Sigma0_VV"
+      ],
+      "speckle_source_bands": [
+        "Sigma0_VH",
+        "Sigma0_VV"
+      ]
+    },
+    "executed_graph_xml": {
+      "terrain_correction_projection": "UTM Zone 31 / WGS84 (EPSG:32631)",
+      "calibration_selected_polarisations": [
+        "VH",
+        "VV"
+      ]
+    },
+    "manual_products": {
+      "terrain_correction_projection": "UTM Zone 31 / WGS84 (EPSG:32631)",
+      "calibration_selected_polarisations": [
+        "VH",
+        "VV"
+      ],
+      "calibration_auxiliary_file": {
+        "20240621": "Latest Auxiliary File",
+        "20240703": "Product Auxiliary File"
+      }
+    },
+    "implication": "Projection and selected polarizations match. The only confirmed processing-parameter mismatch among these settings is June Calibration auxFile: graph Product Auxiliary File versus manual Latest Auxiliary File. July's compared parameters match, yet its pixel values differ.",
+    "action": "Confirm graph screenshot/save provenance and intended calibration polarization and terrain projection before rerunning or changing the graph.",
+    "screenshots_clarification": {
+      "calibration_polarisations": [
+        "VH",
+        "VV"
+      ],
+      "terrain_projection": "UTM Zone 31 / WGS84; confirmed from supplied XML"
+    }
+  }
+}

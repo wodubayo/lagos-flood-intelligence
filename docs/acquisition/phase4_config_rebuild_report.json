@@ -1,0 +1,328 @@
+{
+  "run_id": "phase4_config_20261010",
+  "started_utc": "2026-10-11T01:18:54.727898+00:00",
+  "validation_status": "unresolved; exploratory baseline only",
+  "status": "passed",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.4.6",
+    "rasterio": "1.4.4",
+    "geopandas": "1.2.0",
+    "shapely": "2.1.2",
+    "pyproj": "3.7.2",
+    "pandas": "3.0.6",
+    "fiona": "1.10.1"
+  },
+  "gdal": "3.10.3",
+  "inputs": {
+    "data/interim/boundaries/lagos_lgas.geojson": {
+      "sha256": "63547df5e4f1395aa22c1547398beb8d28ea1331ff7e69cd92fb73c1d9d3f654",
+      "prior_manifest_hash": "63547df5e4f1395aa22c1547398beb8d28ea1331ff7e69cd92fb73c1d9d3f654",
+      "bytes": 226961
+    },
+    "data/interim/boundaries/lagos_state.geojson": {
+      "sha256": "668ebe775ac597fa2951872c4aaaa808a49fa2702dab6f6d96bd08bb5547e8f3",
+      "prior_manifest_hash": "668ebe775ac597fa2951872c4aaaa808a49fa2702dab6f6d96bd08bb5547e8f3",
+      "bytes": 30751
+    },
+    "data/interim/boundaries/sentinel1_pair_coverage.geojson": {
+      "sha256": "c1292a9b3922600c5f0c0c8336dd876d29bdcc451647c11e1cf0ab5b27134d65",
+      "prior_manifest_hash": "c1292a9b3922600c5f0c0c8336dd876d29bdcc451647c11e1cf0ab5b27134d65",
+      "bytes": 31052
+    },
+    "data/interim/dem/lagos_copernicus_dem30.tif": {
+      "sha256": "d956b48b0983f7a07d570b593fac5ee4dbf006fde608109b547b6693691bddab",
+      "prior_manifest_hash": "d956b48b0983f7a07d570b593fac5ee4dbf006fde608109b547b6693691bddab",
+      "bytes": 19611012
+    },
+    "data/interim/sentinel1/S1A_20240621_Orb_TNR_Cal_Spk_TC.dim": {
+      "sha256": "5407b9150acbf4128449eb4464c5ed2b9c21fba15c53505eab9850365bfcde35",
+      "prior_manifest_hash": null,
+      "bytes": 8697428
+    },
+    "data/interim/sentinel1/S1A_20240621_TC_linear.tif": {
+      "sha256": "0799a5b830417f63c58b798c66edb478965035a2034ecfcb55ec9dfb5e23684a",
+      "prior_manifest_hash": null,
+      "bytes": 1531380117
+    },
+    "data/interim/sentinel1/S1A_20240703_Orb_TNR_Cal_Spk_TC.dim": {
+      "sha256": "14eebeae1bf844be722903729d0de8b8cd3e661e094774a59891c4d800848982",
+      "prior_manifest_hash": null,
+      "bytes": 8701640
+    },
+    "data/interim/sentinel1/S1A_20240703_TC_linear.tif": {
+      "sha256": "620e9bdbfb6eb178c7c8761ce6b4090ceda20d820e8da3850362e547ebfc5340",
+      "prior_manifest_hash": null,
+      "bytes": 1532468940
+    },
+    "data/interim/water/lagos_jrc_occurrence_1984_2021.tif": {
+      "sha256": "2b010e367c78e3d8b915b791c4ef9acb22ec71fbe00094741a504e6583b86207",
+      "prior_manifest_hash": "2b010e367c78e3d8b915b791c4ef9acb22ec71fbe00094741a504e6583b86207",
+      "bytes": 555931
+    }
+  },
+  "scripts": {
+    "prepare_sentinel1_pair.py": "6ab43d9c0c398f2efe01d56edd6f2eaddcde9397ec879493eb3b8f7f62d8f657",
+    "analyze_sentinel1_change.py": "069688bc1ae6d0e1a3695602499728131fa111c748ea28356cebc3b2753c112c",
+    "explore_sentinel1_thresholds.py": "8f00b1528471c189708d84b88a53eb9e8be72a962f880cbb84f3d09c052f7dee",
+    "audit_sentinel1_candidates.py": "cdd273a3085e7727807f5993e899415e912980ea618d89d7827729e9af77a5ad",
+    "assess_candidate_terrain.py": "1f4904371aeb9b3967e9af2468fda50363110b4b2a3506b451c5ff6c9ea4f357",
+    "summarize_lga_change.py": "85d72dfe2cd969e1b9693e303dc9e5ac0e5c573e5c87575aea143c80b0eda106",
+    "pipeline_config.py": "726994ec7fa54b5fd776b8cd9fdb9425ffa217ace24438d4a33036d201ebb6f4"
+  },
+  "stages": [
+    {
+      "name": "align",
+      "exit_code": 0,
+      "log": "align.log"
+    },
+    {
+      "name": "change",
+      "exit_code": 0,
+      "log": "change.log"
+    },
+    {
+      "name": "candidates",
+      "exit_code": 0,
+      "log": "candidates.log"
+    },
+    {
+      "name": "audit",
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "name": "terrain",
+      "exit_code": 0,
+      "log": "terrain.log"
+    },
+    {
+      "name": "lga",
+      "exit_code": 0,
+      "log": "lga.log"
+    }
+  ],
+  "comparisons": {
+    "data/processed/sentinel1/lagos_20240621_sigma0_db.tif": {
+      "grid_equal": true,
+      "band_descriptions_equal": true,
+      "differing_band_pixels": 0,
+      "max_absolute_difference": 0.0,
+      "equal": true
+    },
+    "data/processed/sentinel1/lagos_20240621_sigma0_linear.tif": {
+      "grid_equal": true,
+      "band_descriptions_equal": true,
+      "differing_band_pixels": 0,
+      "max_absolute_difference": 0.0,
+      "equal": true
+    },
+    "data/processed/sentinel1/lagos_20240703_sigma0_db.tif": {
+      "grid_equal": true,
+      "band_descriptions_equal": true,
+      "differing_band_pixels": 0,
+      "max_absolute_difference": 0.0,
+      "equal": true
+    },
+    "data/processed/sentinel1/lagos_20240703_sigma0_linear.tif": {
+      "grid_equal": true,
+      "band_descriptions_equal": true,
+      "differing_band_pixels": 0,
+      "max_absolute_difference": 0.0,
+      "equal": true
+    },
+    "data/processed/sentinel1/lagos_candidate_exploratory_clean.tif": {
+      "grid_equal": true,
+      "band_descriptions_equal": true,
+      "differing_band_pixels": 0,
+      "max_absolute_difference": 0.0,
+      "equal": true
+    },
+    "data/processed/sentinel1/lagos_candidate_exploratory_raw.tif": {
+      "grid_equal": true,
+      "band_descriptions_equal": true,
+      "differing_band_pixels": 0,
+      "max_absolute_difference": 0.0,
+      "equal": true
+    },
+    "data/processed/sentinel1/lagos_candidate_review_points.csv": {
+      "method": "exact CSV bytes",
+      "equal": true
+    },
+    "data/processed/sentinel1/lagos_candidate_review_polygons.gpkg": {
+      "method": "key-sorted exact attributes and geometry; database timestamps ignored",
+      "layers": {
+        "candidate_patches": {
+          "features": 400,
+          "attributes_equal": true,
+          "geometry_equal": true
+        }
+      },
+      "equal": true
+    },
+    "data/processed/sentinel1/lagos_candidate_threshold_agreement.tif": {
+      "grid_equal": true,
+      "band_descriptions_equal": true,
+      "differing_band_pixels": 0,
+      "max_absolute_difference": 0.0,
+      "equal": true
+    },
+    "data/processed/sentinel1/lagos_coverage_diagnostic.tif": {
+      "grid_equal": true,
+      "band_descriptions_equal": true,
+      "differing_band_pixels": 0,
+      "max_absolute_difference": 0.0,
+      "equal": true
+    },
+    "data/processed/sentinel1/lagos_delta_sigma0_db.tif": {
+      "grid_equal": true,
+      "band_descriptions_equal": true,
+      "differing_band_pixels": 0,
+      "max_absolute_difference": 0.0,
+      "equal": true
+    },
+    "data/processed/sentinel1/lagos_dsm_slope_30m.tif": {
+      "grid_equal": true,
+      "band_descriptions_equal": true,
+      "differing_band_pixels": 0,
+      "max_absolute_difference": 0.0,
+      "equal": true
+    },
+    "data/processed/sentinel1/lagos_pair_positive_mask.tif": {
+      "grid_equal": true,
+      "band_descriptions_equal": true,
+      "differing_band_pixels": 0,
+      "max_absolute_difference": 0.0,
+      "equal": true
+    },
+    "data/processed/sentinel1/lagos_pair_valid_mask.tif": {
+      "grid_equal": true,
+      "band_descriptions_equal": true,
+      "differing_band_pixels": 0,
+      "max_absolute_difference": 0.0,
+      "equal": true
+    },
+    "docs/acquisition/sentinel1_alignment_report.json": {
+      "method": "JSON content excluding top-level created_utc",
+      "equal": true
+    },
+    "docs/acquisition/sentinel1_candidate_audit.json": {
+      "method": "JSON content excluding top-level created_utc",
+      "equal": true
+    },
+    "docs/acquisition/sentinel1_candidate_polygons.csv": {
+      "method": "exact CSV bytes",
+      "equal": true
+    },
+    "docs/acquisition/sentinel1_change_report.json": {
+      "method": "JSON content excluding top-level created_utc",
+      "equal": true
+    },
+    "docs/acquisition/sentinel1_slope_report.json": {
+      "method": "JSON content excluding top-level created_utc",
+      "equal": true
+    },
+    "docs/acquisition/sentinel1_threshold_report.json": {
+      "method": "JSON content excluding top-level created_utc",
+      "equal": true
+    },
+    "docs/acquisition/sentinel1_threshold_sensitivity.csv": {
+      "method": "exact CSV bytes",
+      "equal": true
+    },
+    "docs/validation/lga_change_report.json": {
+      "method": "JSON content excluding top-level created_utc",
+      "equal": true
+    },
+    "docs/validation/lga_change_summary.csv": {
+      "method": "exact CSV bytes",
+      "equal": true
+    },
+    "docs/validation/lga_change_summary.gpkg": {
+      "method": "key-sorted exact attributes and geometry; database timestamps ignored",
+      "layers": {
+        "lga_change_summary": {
+          "features": 20,
+          "attributes_equal": true,
+          "geometry_equal": true
+        }
+      },
+      "equal": true
+    }
+  },
+  "configuration": {
+    "schema_version": 1,
+    "event": {
+      "id": "LAG_2024_07",
+      "before_date": "20240621",
+      "after_date": "20240703",
+      "aoi": "Lagos State"
+    },
+    "fixed_method": {
+      "crs": "EPSG:32631",
+      "pixel_spacing_m": 10,
+      "jrc_exclusion_pct": 90,
+      "connectivity": 8,
+      "lga_decrease_db": 3
+    },
+    "candidates": {
+      "dark_thresholds_db": [
+        -18,
+        -21,
+        -24
+      ],
+      "drop_thresholds_db": [
+        -2,
+        -3,
+        -4
+      ],
+      "preview_dark_db": -21,
+      "preview_drop_db": -3,
+      "cleanup_sizes_pixels": [
+        9,
+        25,
+        100
+      ],
+      "preview_min_pixels": 25
+    },
+    "terrain": {
+      "slope_cutoffs_deg": [
+        2,
+        5,
+        10
+      ]
+    }
+  },
+  "configuration_source_sha256": "a3c4b4a1058557eb146a46c6845615f9b6dbf5526a637db72b94b82f195bc80b",
+  "reference_hashes": {
+    "data/processed/sentinel1/lagos_20240621_sigma0_db.tif": "91a9fafbd1585174c3a0c8c7b2e55269a307f5ffd5b02453b4deea480221d3b6",
+    "data/processed/sentinel1/lagos_20240621_sigma0_linear.tif": "40e630f77716f91f42d521aff54b0647bdd15aaae996961df9e94c5e0039d074",
+    "data/processed/sentinel1/lagos_20240703_sigma0_db.tif": "84339a004582ca6412984a82e8886118398fc549b88be6548057b2d4dec78043",
+    "data/processed/sentinel1/lagos_20240703_sigma0_linear.tif": "b7b9549b30ab205fb94071d76ae0eaab89fb98dd75e21e15ad1ddca81812854e",
+    "data/processed/sentinel1/lagos_candidate_exploratory_clean.tif": "d1f68da0b61074dc8b4b8dadb2305d55df06083473ff0d8bc948a32be3ad511e",
+    "data/processed/sentinel1/lagos_candidate_exploratory_raw.tif": "9c74f7c9a8ea4269b1da7c0f2409429ae976a1b61362e3afa24c37c209e48269",
+    "data/processed/sentinel1/lagos_candidate_review_points.csv": "6eaec505471ccb45640022192b69790c1ef6f7123024b579ac016fb3436b914f",
+    "data/processed/sentinel1/lagos_candidate_review_polygons.gpkg": "a98d0e81d6e21a1f42360c09215ff71325ee1f4c12ad36ff17041ee8c2f3e3b9",
+    "data/processed/sentinel1/lagos_candidate_threshold_agreement.tif": "3170f7e06c826ac46c5695770819c230e22d4b2b1a7a6bae56a04da1c93681a4",
+    "data/processed/sentinel1/lagos_coverage_diagnostic.tif": "ffa906d8c1ad9b1fc549845a18803aa080d7a1c3fc039192acee165878abd798",
+    "data/processed/sentinel1/lagos_delta_sigma0_db.tif": "c8644ba707b0943526a8cce8453211e10d3d878ae302b6d760a1048c8de6b052",
+    "data/processed/sentinel1/lagos_dsm_slope_30m.tif": "fa978d7fc911475cbc0916d6007c1625bd39fcf54c94c5be83dec756787f771e",
+    "data/processed/sentinel1/lagos_pair_positive_mask.tif": "7ec4f4e4ed05b8b4d09ccaa41e4c333a57f80bdb4e8b919a46cbea47066bfb2c",
+    "data/processed/sentinel1/lagos_pair_valid_mask.tif": "f9bb061f59a9c69ad03738634ef44ace25e9dd23917154f53a87d7fa06f649f3",
+    "docs/acquisition/sentinel1_alignment_report.json": "24f81a453215982fde7b347791f2a3a12f376da2e775ad7cdd42462ff57ff767",
+    "docs/acquisition/sentinel1_candidate_audit.json": "d01b7136f71bc120c18f7d1c56b754ffde52b390ecfd093a32765cf8788fe8d3",
+    "docs/acquisition/sentinel1_candidate_polygons.csv": "0da10723a71d48fe906989d27dfe8a11d08a67f86c5be22412096e0b9526888e",
+    "docs/acquisition/sentinel1_change_report.json": "9ac9130b129d70d9a974fb13f76168ffed3bddd46a345e4dca00ece6b221bddc",
+    "docs/acquisition/sentinel1_slope_report.json": "7bfb90063ce0dfcd800b3f007503e5c9c11be97399da1ed768e45bbdde7edfaa",
+    "docs/acquisition/sentinel1_threshold_report.json": "90245074d8c34b2268522e96ead7ddd8457bb990979a17e36934418c0cd583fc",
+    "docs/acquisition/sentinel1_threshold_sensitivity.csv": "fff582a3eb3527d2725bed5bae259cffdfe010a69ee602f52cbb8caee97b3a4f",
+    "docs/validation/lga_change_report.json": "ce947fdd5076395504f59246c98b142c4779ca509b659a70495e3ee25467eaf3",
+    "docs/validation/lga_change_summary.csv": "c50b6c65ecd4375926bb7c9b593ef4cae699ecbf4ec2c4794a6f04b7950e8d9b",
+    "docs/validation/lga_change_summary.gpkg": "e122c309abae31d11249815c7bc552fc6e10d4fb31cc170f0db3d8f227fef8eb"
+  },
+  "original_outputs_unchanged": true,
+  "original_manifest_unchanged": true,
+  "source_inputs_unchanged": true,
+  "finished_utc": "2026-10-11T01:22:15.152198+00:00"
+}

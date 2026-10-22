@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "event": {
+    "id": "LAG_2024_07",
+    "before_date": "20240621",
+    "after_date": "20240703",
+    "aoi": "Lagos State"
+  },
+  "fixed_method": {
+    "crs": "EPSG:32631",
+    "pixel_spacing_m": 10,
+    "jrc_exclusion_pct": 90,
+    "connectivity": 8,
+    "lga_decrease_db": 3
+  },
+  "candidates": {
+    "dark_thresholds_db": [
+      -18,
+      -21,
+      -24
+    ],
+    "drop_thresholds_db": [
+      -2,
+      -3,
+      -4
+    ],
+    "preview_dark_db": -21,
+    "preview_drop_db": -3,
+    "cleanup_sizes_pixels": [
+      9,
+      25,
+      100
+    ],
+    "preview_min_pixels": 25
+  },
+  "terrain": {
+    "slope_cutoffs_deg": [
+      2,
+      5,
+      10
+    ]
+  }
+}

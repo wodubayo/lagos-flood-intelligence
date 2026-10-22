@@ -1,0 +1,76 @@
+{
+  "checked_utc": "2026-10-12T04:01:20.929160+00:00",
+  "stage": "Terrain correction",
+  "date": "20240703",
+  "comparison": "manual SNAP DIMAP vs graph SNAP DIMAP directly",
+  "diagnostic_only": true,
+  "absolute_difference_threshold_counts": {},
+  "bands": {
+    "Sigma0_VH": {
+      "grid_equal_semantically": true,
+      "shape": [
+        24519,
+        28674
+      ],
+      "pixels": 703057806,
+      "exact_different_pixels": 165734128,
+      "zero_mask_differences": 71,
+      "outside_tolerance_pixels": 161147169,
+      "max_absolute_difference": 0.7209854125976562,
+      "max_difference_pixel_row_col": [
+        8341,
+        6907
+      ],
+      "max_difference_pixel_center_xy": [
+        546245.7538096438,
+        710111.4197720994
+      ],
+      "max_difference_values_manual_graph": [
+        16.671138763427734,
+        17.39212417602539
+      ],
+      "threshold_counts": {
+        "0.0001": 4456274,
+        "0.001": 95864,
+        "0.01": 1780,
+        "0.1": 21,
+        "1.0": 0
+      },
+      "finite_pairs": 703057806,
+      "mean_absolute_difference": 5.309591464906322e-06
+    },
+    "Sigma0_VV": {
+      "grid_equal_semantically": true,
+      "shape": [
+        24519,
+        28674
+      ],
+      "pixels": 703057806,
+      "exact_different_pixels": 165733483,
+      "zero_mask_differences": 71,
+      "outside_tolerance_pixels": 161729374,
+      "max_absolute_difference": 18.278106689453125,
+      "max_difference_pixel_row_col": [
+        7294,
+        15509
+      ],
+      "max_difference_pixel_center_xy": [
+        632265.7538096438,
+        720581.4197720994
+      ],
+      "max_difference_values_manual_graph": [
+        412.71441650390625,
+        394.4363098144531
+      ],
+      "threshold_counts": {
+        "0.0001": 42438789,
+        "0.001": 3213300,
+        "0.01": 102649,
+        "0.1": 3706,
+        "1.0": 105
+      },
+      "finite_pairs": 703057806,
+      "mean_absolute_difference": 3.3346706140408586e-05
+    }
+  }
+}

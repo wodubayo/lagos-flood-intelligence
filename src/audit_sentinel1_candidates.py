@@ -9,6 +9,11 @@ from rasterio.enums import Resampling
 from rasterio.vrt import WarpedVRT
 from rasterio.warp import transform
 from prepare_sentinel1_pair import ROOT, save_json, sha256
+from pipeline_config import CONFIG
+C=CONFIG["candidates"]
+DARK=C["preview_dark_db"]
+DROP=C["preview_drop_db"]
+MIN_PIXELS=C["preview_min_pixels"]
 
 def describe(values):
     v=np.asarray(values,dtype="float64")
@@ -48,7 +53,7 @@ def main():
             z=elev.read(1,window=w)[keep].astype("float64")
             z[z==-9999]=np.nan
             assert np.all(np.isfinite(b)) and np.all(b!=-9999)
-            assert np.all(b[0]>-21) and np.all(a[0]<=-21) and np.all(d[0]<=-3)
+            assert np.all(b[0]>DARK) and np.all(a[0]<=DARK) and np.all(d[0]<=DROP)
             np.testing.assert_allclose(d,a-b,atol=1e-5,rtol=0)
             rr,cc=np.nonzero(keep)
             rr+=int(w.row_off); cc+=int(w.col_off)
@@ -63,8 +68,8 @@ def main():
         z=subset[:,-1]
         report["groups"][label]=dict(pixels=len(subset),area_km2=len(subset)*0.0001,statistics=stats,vv_decreased_pixels=int((subset[:,10]<0).sum()),dem_missing_pixels=int((~np.isfinite(z)).sum()),dem_elevation_counts={str(t):int((np.isfinite(z)&(z<=t)).sum()) for t in (0,2,5,10,20)})
     expected=json.loads((ROOT/"docs/acquisition/sentinel1_threshold_report.json").read_text())
-    assert report["groups"]["raw"]["pixels"]==next(x["retained_pixels"] for x in expected["thresholds"] if x["july_vh_max_db"]==-21 and x["delta_vh_max_db"]==-3)
-    assert report["groups"]["clean"]["pixels"]==next(x["retained_pixels"] for x in expected["cleanup_preview"] if x["min_component_pixels"]==25)
+    assert report["groups"]["raw"]["pixels"]==next(x["retained_pixels"] for x in expected["thresholds"] if x["july_vh_max_db"]==DARK and x["delta_vh_max_db"]==DROP)
+    assert report["groups"]["clean"]["pixels"]==next(x["retained_pixels"] for x in expected["cleanup_preview"] if x["min_component_pixels"]==MIN_PIXELS)
     report["checks"]=["registered input hashes match","grids match","clean is subset of raw","every raw candidate satisfies preview rule","delta matches dates","counts match threshold report"]
     report["limitations"]=["Selection already requires VH decrease; its summary is not independent confirmation.","DSM includes surface objects; no slope, elevation cutoff, or terrain filtering applied.","Resampling does not improve DEM resolution.","No event-time pixel labels or independent accuracy metrics available."]
     with points_path.open("w",newline="",encoding="utf-8") as f:

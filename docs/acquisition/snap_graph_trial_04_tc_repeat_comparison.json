@@ -1,0 +1,32 @@
+﻿{
+    "checked_utc":  "2026-10-15",
+    "stage":  "Terrain correction repeatability",
+    "input":  "outputs/snap_runs/graph_trial_02_stages/S1A_20240703_Orb_TNR_Cal_Spk.dim",
+    "outputs":  {
+                    "repeat":  "outputs/snap_runs/graph_trial_03_tc_isolation/S1A_20240703_graph_disk_repeat_Spk_TC.dim",
+                    "first":  "outputs/snap_runs/graph_trial_03_tc_isolation/S1A_20240703_graph_disk_Spk_TC.dim"
+                },
+    "repeat_comparison":  {
+                              "Sigma0_VV":  {
+                                                "sha256":  "263E1ACBE7A2CCFFBE64C841F2A02DB7DCAD223892915984276E1487F7BB379C",
+                                                "byte_identical":  true
+                                            },
+                              "Sigma0_VH":  {
+                                                "sha256":  "9FB49C6F980319F09FC5E48A282E02F600F671841F87EEBC964FDC2D88292542",
+                                                "byte_identical":  true
+                                            }
+                          },
+    "graph_vs_manual_intermediate":  {
+                                         "included":  [
+                                                          "VH/VV band image and header files",
+                                                          "five tie-point-grid image/header pairs",
+                                                          "ground-control-point and pins CSVs"
+                                                      ],
+                                         "all_sha256_identical":  true,
+                                         "compared_files":  15,
+                                         "dim_wrapper_byte_identical":  false,
+                                         "parsed_mdattr_difference":  "The precise orbit provenance and Orbit_State_Vectors differ: graph output after ThermalNoiseRemoval records orbit_state_vector_file=- and 17 original vectors (05:29:09–05:31:49); manual output records the Sentinel Precise EOF file and 49 precise vectors (05:30:07–05:30:55)."
+                                     },
+    "conclusion":  "The graph repeat is byte-identical on the same saved source. The graph and manual saved intermediates have byte-identical raster and tie-point-grid files but differ in source orbit metadata; see the follow-up orbit-metadata probe report.",
+    "diagnostic_only":  true
+}

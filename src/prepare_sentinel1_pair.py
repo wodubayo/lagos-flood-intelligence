@@ -20,9 +20,11 @@ from rasterio.features import geometry_mask
 from rasterio.vrt import WarpedVRT
 from rasterio.windows import Window, from_bounds
 
+from pipeline_config import CONFIG
+
 ROOT = Path(__file__).resolve().parents[1]
 NODATA = -9999.0
-DATES = ("20240621", "20240703")
+DATES = (CONFIG["event"]["before_date"], CONFIG["event"]["after_date"])
 
 
 def save_json(path, value):
@@ -63,6 +65,28 @@ def band_metadata(dim):
         raise ValueError("Source zero-nodata assumption not supported by DIMAP")
     return [r[1] for r in result]
 
+
+
+def verify_prepared_outputs(outputs, common_path):
+    with ExitStack() as stack:
+        dates=[stack.enter_context(rasterio.open(p)) for p in outputs]
+        mask=stack.enter_context(rasterio.open(common_path))
+        count=0
+        for ds in dates:
+            if ds.descriptions != ("Sigma0_VH","Sigma0_VV") or ds.nodata != NODATA:
+                raise ValueError("Unexpected prepared bands/nodata")
+            if (ds.crs,ds.transform,ds.shape)!=(mask.crs,mask.transform,mask.shape):
+                raise ValueError("Prepared mask grid mismatch")
+        for _,window in mask.block_windows(1):
+            values=[ds.read(window=window) for ds in dates]
+            expected=np.logical_and.reduce([np.all(np.isfinite(v)&(v!=NODATA),axis=0) for v in values])
+            actual=mask.read(1,window=window)
+            if not np.isin(actual,[0,1,255]).all() or not np.array_equal(actual==1,expected):
+                raise ValueError("Full output mask inconsistency")
+            if any(np.any(v[:,actual==255]!=NODATA) for v in values):
+                raise ValueError("Valid values outside AOI")
+            count+=int((actual==1).sum())
+    return {"full_output_mask_consistency":True,"band_names_and_nodata":True,"common_pixel_count_verified":count}
 
 def prepare():
     source_dir = ROOT / "data/interim/sentinel1"
@@ -177,6 +201,9 @@ def prepare():
                          "Individual rasters retain their own validity; use the common mask for pair comparisons.",
                          "Negative/zero valid values retained after resampling; mask nonpositive values before dB conversion.",
                          "No flood classification or subpixel geolocation validation performed."])
+    report["checks"].update(verify_prepared_outputs(outputs, common_path))
+    if report["checks"]["common_pixel_count_verified"] != counts["common_valid_pixels"]:
+        raise ValueError("Prepared count mismatch")
     manifest_path = ROOT / "docs/acquisition/manifest.json"
     manifest = json.loads(manifest_path.read_text())
     for p in outputs + [common_path]:

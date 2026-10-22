@@ -9,6 +9,11 @@ from rasterio.enums import Resampling
 from rasterio.features import sieve
 from rasterio.vrt import WarpedVRT
 from prepare_sentinel1_pair import ROOT, save_json, sha256
+from pipeline_config import CONFIG
+C = CONFIG["candidates"]
+DARK = C["preview_dark_db"]
+DROP = C["preview_drop_db"]
+MIN_PIXELS = C["preview_min_pixels"]
 
 def candidate(before, after, delta, valid, dark, drop):
     return valid & (before > dark) & (after <= dark) & (delta <= drop)
@@ -31,7 +36,7 @@ def main():
     manifest=json.loads(manifest_path.read_text())
     for p in inputs:
         assert sha256(p)==manifest[p.relative_to(ROOT).as_posix()]["sha256"], str(p)
-    settings=[(dark,drop) for dark in (-18,-21,-24) for drop in (-2,-3,-4)]
+    settings=[(dark,drop) for dark in C["dark_thresholds_db"] for drop in C["drop_thresholds_db"]]
     rows=[dict(july_vh_max_db=d,june_vh_min_exclusive_db=d,delta_vh_max_db=c,raw_pixels=0,water_ge90_pixels=0,water_unknown_pixels=0,retained_pixels=0,vv_decrease_pixels=0) for d,c in settings]
     support_count=eligible_count=water_count=unknown_count=0
     with ExitStack() as stack:
@@ -61,7 +66,7 @@ def main():
                 row["retained_pixels"]+=int(retained.sum())
                 row["vv_decrease_pixels"]+=int((retained & (delta[1]<0)).sum())
                 votes+=retained
-                if (dark,drop)==(-21,-3):
+                if (dark,drop)==(DARK,DROP):
                     baseline[w.toslices()]=retained
             agreement[w.toslices()]=np.where(eligible,votes,255)
         profile=before.profile.copy()
@@ -73,22 +78,22 @@ def main():
         row["percent_eligible"]=100*row["retained_pixels"]/eligible_count
     cleanup=[]
     clean=None
-    for size in (9,25,100):
+    for size in C["cleanup_sizes_pixels"]:
         filtered=remove_small(baseline,size)
         assert not np.any(filtered & ~baseline)
         cleanup.append(dict(min_component_pixels=size,area_threshold_m2=size*100,retained_pixels=int(filtered.sum()),retained_area_km2=float(filtered.sum())*0.0001))
-        if size==25: clean=filtered
+        if size==MIN_PIXELS: clean=filtered
     for path,values in zip(outputs,[agreement,np.where(agreement==255,255,baseline).astype("uint8"),np.where(agreement==255,255,clean).astype("uint8")]):
         partial=path.with_suffix(".part.tif")
         with rasterio.open(partial,"w",**profile) as dst:
             dst.write(values,1)
-            dst.set_band_description(1,"threshold agreement 0..9;255=excluded" if path==outputs[0] else "0=not selected;1=exploratory candidate;255=excluded")
-            dst.update_tags(status="EXPLORATORY, UNVALIDATED; not flood extent",water_exclusion="JRC occurrence >=90%; unknown excluded",rule="June VH > T AND July VH <= T AND delta VH <= D",preview="T=-21 dB,D=-3 dB; clean minimum 25 pixels,8-connected; not optimized")
+            dst.set_band_description(1,f"threshold agreement 0..{len(settings)};255=excluded" if path==outputs[0] else "0=not selected;1=exploratory candidate;255=excluded")
+            dst.update_tags(status="EXPLORATORY, UNVALIDATED; not flood extent",water_exclusion="JRC occurrence >=90%; unknown excluded",rule="June VH > T AND July VH <= T AND delta VH <= D",preview=f"T={DARK} dB,D={DROP} dB; clean minimum {MIN_PIXELS} pixels,8-connected; not optimized")
         partial.replace(path)
         with rasterio.open(path) as check:
             assert check.crs==profile["crs"] and check.transform==profile["transform"]
             np.testing.assert_array_equal(check.read(1),values)
-    report=dict(created_utc=datetime.now(timezone.utc).isoformat(),status="exploratory, not validated flood extent",common_positive_pixels=support_count,excluded_historical_water_pixels=water_count,excluded_unknown_water_pixels=unknown_count,eligible_pixels=eligible_count,eligible_area_km2=eligible_count*0.0001,thresholds=rows,cleanup_preview=cleanup,preview_settings=dict(july_vh_max_db=-21,delta_vh_max_db=-3,june_vh_min_exclusive_db=-21,min_component_pixels=25,connectivity=8),checks=["input SHA256 matched manifest","grids matched","water partitions matched counts","cleanup never adds candidates","all three raster outputs reopened and compared exactly"],limitations=["Thresholds are deliberately illustrative, not calibrated or selected for accuracy.","VV decrease is reported as supporting information, not required.","Darkening rule can miss urban or vegetated flooding with increased backscatter.","No terrain filter or independent validation applied.","JRC v1.4 limitations and prior coverage loss remain.","Visual patch has no recorded coordinates; statistics are study-area-wide."])
+    report=dict(created_utc=datetime.now(timezone.utc).isoformat(),status="exploratory, not validated flood extent",common_positive_pixels=support_count,excluded_historical_water_pixels=water_count,excluded_unknown_water_pixels=unknown_count,eligible_pixels=eligible_count,eligible_area_km2=eligible_count*0.0001,thresholds=rows,cleanup_preview=cleanup,preview_settings=dict(july_vh_max_db=DARK,delta_vh_max_db=DROP,june_vh_min_exclusive_db=DARK,min_component_pixels=MIN_PIXELS,connectivity=8),checks=["input SHA256 matched manifest","grids matched","water partitions matched counts","cleanup never adds candidates","all three raster outputs reopened and compared exactly"],limitations=["Thresholds are deliberately illustrative, not calibrated or selected for accuracy.","VV decrease is reported as supporting information, not required.","Darkening rule can miss urban or vegetated flooding with increased backscatter.","No terrain filter or independent validation applied.","JRC v1.4 limitations and prior coverage loss remain.","Visual patch has no recorded coordinates; statistics are study-area-wide."])
     save_json(report_path,report)
     with csv_path.open("w",newline="",encoding="utf-8") as stream:
         writer=csv.DictWriter(stream,fieldnames=list(rows[0])); writer.writeheader(); writer.writerows(rows)

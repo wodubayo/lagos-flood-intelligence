@@ -1,0 +1,212 @@
+﻿{
+    "checked_utc":  "2026-10-12T03:48:55.213025+00:00",
+    "scope":  "July 3 manual SNAP intermediate DIMAP versus graph DIMAP. Stage grids are checked semantically (equivalent CRS and transform); values use rtol=1e-5, atol=1e-7.",
+    "diagnostic_only":  true,
+    "graph":  "outputs/snap_runs/graph_trial_02_stages/sentinel1_preprocess_stages.xml",
+    "stages":  {
+                   "TNR":  {
+                               "manual":  "data/interim/sentinel1/S1A_20240703_Orb_TNR",
+                               "graph":  "outputs/snap_runs/graph_trial_02_stages/S1A_20240703_Orb_TNR.dim",
+                               "bands":  {
+                                             "Intensity_VH":  {
+                                                                  "manual_shape":  [
+                                                                                       19506,
+                                                                                       25193
+                                                                                   ],
+                                                                  "graph_shape":  [
+                                                                                      19506,
+                                                                                      25193
+                                                                                  ],
+                                                                  "grid_equal":  true,
+                                                                  "pixels":  491414658,
+                                                                  "exact_different_pixels":  0,
+                                                                  "zero_mask_differences":  0,
+                                                                  "nonfinite_mask_differences":  0,
+                                                                  "outside_tolerance_pixels":  0,
+                                                                  "max_absolute_difference":  0.0,
+                                                                  "finite_pairs":  491414658,
+                                                                  "mean_absolute_difference":  0.0
+                                                              },
+                                             "Intensity_VV":  {
+                                                                  "manual_shape":  [
+                                                                                       19506,
+                                                                                       25193
+                                                                                   ],
+                                                                  "graph_shape":  [
+                                                                                      19506,
+                                                                                      25193
+                                                                                  ],
+                                                                  "grid_equal":  true,
+                                                                  "pixels":  491414658,
+                                                                  "exact_different_pixels":  0,
+                                                                  "zero_mask_differences":  0,
+                                                                  "nonfinite_mask_differences":  0,
+                                                                  "outside_tolerance_pixels":  0,
+                                                                  "max_absolute_difference":  0.0,
+                                                                  "finite_pairs":  491414658,
+                                                                  "mean_absolute_difference":  0.0
+                                                              }
+                                         }
+                           },
+                   "Calibration":  {
+                                       "manual":  "data/interim/sentinel1/S1A_20240703_Orb_TNR_Cal",
+                                       "graph":  "outputs/snap_runs/graph_trial_02_stages/S1A_20240703_Orb_TNR_Cal.dim",
+                                       "bands":  {
+                                                     "Sigma0_VH":  {
+                                                                       "manual_shape":  [
+                                                                                            19506,
+                                                                                            25193
+                                                                                        ],
+                                                                       "graph_shape":  [
+                                                                                           19506,
+                                                                                           25193
+                                                                                       ],
+                                                                       "grid_equal":  true,
+                                                                       "pixels":  491414658,
+                                                                       "exact_different_pixels":  0,
+                                                                       "zero_mask_differences":  0,
+                                                                       "nonfinite_mask_differences":  0,
+                                                                       "outside_tolerance_pixels":  0,
+                                                                       "max_absolute_difference":  0.0,
+                                                                       "finite_pairs":  491414658,
+                                                                       "mean_absolute_difference":  0.0
+                                                                   },
+                                                     "Sigma0_VV":  {
+                                                                       "manual_shape":  [
+                                                                                            19506,
+                                                                                            25193
+                                                                                        ],
+                                                                       "graph_shape":  [
+                                                                                           19506,
+                                                                                           25193
+                                                                                       ],
+                                                                       "grid_equal":  true,
+                                                                       "pixels":  491414658,
+                                                                       "exact_different_pixels":  0,
+                                                                       "zero_mask_differences":  0,
+                                                                       "nonfinite_mask_differences":  0,
+                                                                       "outside_tolerance_pixels":  0,
+                                                                       "max_absolute_difference":  0.0,
+                                                                       "finite_pairs":  491414658,
+                                                                       "mean_absolute_difference":  0.0
+                                                                   }
+                                                 }
+                                   },
+                   "Speckle filter":  {
+                                          "manual":  "data/interim/sentinel1/S1A_20240703_Orb_TNR_Cal_Spk",
+                                          "graph":  "outputs/snap_runs/graph_trial_02_stages/S1A_20240703_Orb_TNR_Cal_Spk.dim",
+                                          "bands":  {
+                                                        "Sigma0_VH":  {
+                                                                          "manual_shape":  [
+                                                                                               19506,
+                                                                                               25193
+                                                                                           ],
+                                                                          "graph_shape":  [
+                                                                                              19506,
+                                                                                              25193
+                                                                                          ],
+                                                                          "grid_equal":  true,
+                                                                          "pixels":  491414658,
+                                                                          "exact_different_pixels":  0,
+                                                                          "zero_mask_differences":  0,
+                                                                          "nonfinite_mask_differences":  0,
+                                                                          "outside_tolerance_pixels":  0,
+                                                                          "max_absolute_difference":  0.0,
+                                                                          "finite_pairs":  491414658,
+                                                                          "mean_absolute_difference":  0.0
+                                                                      },
+                                                        "Sigma0_VV":  {
+                                                                          "manual_shape":  [
+                                                                                               19506,
+                                                                                               25193
+                                                                                           ],
+                                                                          "graph_shape":  [
+                                                                                              19506,
+                                                                                              25193
+                                                                                          ],
+                                                                          "grid_equal":  true,
+                                                                          "pixels":  491414658,
+                                                                          "exact_different_pixels":  0,
+                                                                          "zero_mask_differences":  0,
+                                                                          "nonfinite_mask_differences":  0,
+                                                                          "outside_tolerance_pixels":  0,
+                                                                          "max_absolute_difference":  0.0,
+                                                                          "finite_pairs":  491414658,
+                                                                          "mean_absolute_difference":  0.0
+                                                                      }
+                                                    }
+                                      },
+                   "Terrain correction":  {
+                                              "manual":  "data/interim/sentinel1/S1A_20240703_Orb_TNR_Cal_Spk_TC.dim",
+                                              "graph":  "outputs/snap_runs/graph_trial_02_stages/S1A_20240703_Orb_TNR_Cal_Spk_TC.dim",
+                                              "bands":  {
+                                                            "Sigma0_VH":  {
+                                                                              "grid_equal_semantically":  true,
+                                                                              "shape":  [
+                                                                                            24519,
+                                                                                            28674
+                                                                                        ],
+                                                                              "pixels":  703057806,
+                                                                              "exact_different_pixels":  165734128,
+                                                                              "zero_mask_differences":  71,
+                                                                              "outside_tolerance_pixels":  161147169,
+                                                                              "max_absolute_difference":  0.7209854125976562,
+                                                                              "max_difference_pixel_row_col":  [
+                                                                                                                   8341,
+                                                                                                                   6907
+                                                                                                               ],
+                                                                              "max_difference_pixel_center_xy":  [
+                                                                                                                     546245.7538096438,
+                                                                                                                     710111.4197720994
+                                                                                                                 ],
+                                                                              "max_difference_values_manual_graph":  [
+                                                                                                                         16.671138763427734,
+                                                                                                                         17.39212417602539
+                                                                                                                     ],
+                                                                              "threshold_counts":  {
+                                                                                                       "0.0001":  4456274,
+                                                                                                       "0.001":  95864,
+                                                                                                       "0.01":  1780,
+                                                                                                       "0.1":  21,
+                                                                                                       "1.0":  0
+                                                                                                   },
+                                                                              "finite_pairs":  703057806,
+                                                                              "mean_absolute_difference":  5.3095914649063222E-06
+                                                                          },
+                                                            "Sigma0_VV":  {
+                                                                              "grid_equal_semantically":  true,
+                                                                              "shape":  [
+                                                                                            24519,
+                                                                                            28674
+                                                                                        ],
+                                                                              "pixels":  703057806,
+                                                                              "exact_different_pixels":  165733483,
+                                                                              "zero_mask_differences":  71,
+                                                                              "outside_tolerance_pixels":  161729374,
+                                                                              "max_absolute_difference":  18.278106689453125,
+                                                                              "max_difference_pixel_row_col":  [
+                                                                                                                   7294,
+                                                                                                                   15509
+                                                                                                               ],
+                                                                              "max_difference_pixel_center_xy":  [
+                                                                                                                     632265.7538096438,
+                                                                                                                     720581.4197720994
+                                                                                                                 ],
+                                                                              "max_difference_values_manual_graph":  [
+                                                                                                                         412.71441650390625,
+                                                                                                                         394.4363098144531
+                                                                                                                     ],
+                                                                              "threshold_counts":  {
+                                                                                                       "0.0001":  42438789,
+                                                                                                       "0.001":  3213300,
+                                                                                                       "0.01":  102649,
+                                                                                                       "0.1":  3706,
+                                                                                                       "1.0":  105
+                                                                                                   },
+                                                                              "finite_pairs":  703057806,
+                                                                              "mean_absolute_difference":  3.3346706140408586E-05
+                                                                          }
+                                                        }
+                                          }
+               }
+}
