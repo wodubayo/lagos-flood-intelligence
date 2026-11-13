@@ -57,7 +57,7 @@ This project may use a mix of:
 - Land-use / urban exposure data
 - Infrastructure and population indicators
 - Published flood reports and reference material such as `TR_220824_LagosFloods.pdf`
-- GDACS Floods Report: https://www.gdacs.org/Floods/report.aspx?episodeid=10&eventid=1102720&eventtype=FL&utm_source=chatgpt.com
+- GDACS Floods Report: https://www.gdacs.org/Floods/report.aspx?episodeid=10&eventid=1102720&eventtype=FL
 
 ## Workflow
 
